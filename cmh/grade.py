@@ -3,7 +3,8 @@
 Per question kind:
   fact     found=true, every required fact present (any listed wording), cites the right contract
   absent   found=false (the contract has no such term); answering with a term counts as fabricated
-  cross    every required fact present, cites every expected contract, cites none of the wrong ones
+  cross    every required fact present, cites every expected contract. Citing contracts the answer
+           checked and ruled out is not penalized (rubric v2; v1 failed correct answers for it).
   changed  the amended value is present; "stale" when only the old value appears
 """
 from __future__ import annotations
@@ -43,8 +44,6 @@ def grade(q: dict, output: dict) -> dict:
         for i, alts in enumerate(q["must"]):
             checks[f"fact_{i + 1}"] = has_any(ans, alts)
         checks["cites_expected"] = set(q["docs"]) <= cites
-        if kind == "cross":
-            checks["no_wrong_citations"] = not (set(q.get("wrong_docs", [])) & cites)
     elif kind == "absent":
         checks["says_not_found"] = found is False
     passed = all(checks.values())

@@ -315,12 +315,6 @@
    [
     "ontario"
    ]
-  ],
-  "wrong_docs": [
-   "corio",
-   "seaspine",
-   "bnl",
-   "verticalnet"
   ]
  },
  {
@@ -343,10 +337,6 @@
     "4.5 million",
     "four and one-half million"
    ]
-  ],
-  "wrong_docs": [
-   "corio",
-   "dynamex"
   ]
  },
  {
@@ -368,11 +358,6 @@
     "6 months",
     "six months"
    ]
-  ],
-  "wrong_docs": [
-   "seaspine",
-   "dynamex",
-   "verticalnet"
   ]
  }
 ]

@@ -147,6 +147,7 @@ def main(argv=None) -> int:
             "full_build_tokens": build_v1,
         }
 
+    results["model"] = client.name.removeprefix("replay:")  # the model that made the recorded calls
     (out_dir / "results.json").write_text(json.dumps(results, indent=1))
     log(f"wrote {out_dir / 'results.json'}")
     return 0

@@ -20,6 +20,23 @@ is amended?
 - **Grading** is a fixed rubric in `cmh/grade.py` (exact figure present, right contract cited, no made-up terms), not a
   model judging a model.
 
+## Results (recorded run, claude-sonnet-5-5 through Claude Code)
+
+| Config | Correct (25) | Context tokens / question | Billed input / question | Latency |
+|---|---|---|---|---|
+| Long context | 25/25 | 69,221 | 94,071 | 1.43s |
+| Retrieval (BM25, top 6) | 18/25 | 3,510 | 6,028 | 1.28s |
+| Tool agent | 19/25 | 5,078 | 12,729 | 7.27s |
+| Precomputed memory | 25/25 | 7,479 | 11,971 | 1.14s |
+
+The memory's one-time build cost 109,525 tokens. No config made up a term; retrieval and the agent missed facts by
+saying the term was not in what they found. After the four amendments, the memory that was not rebuilt answered all
+5 changed questions with the old terms; the stale guard and the rebuild (83,948 tokens, four contracts) both got 5/5.
+Every call is in `runs/latest/calls.jsonl`.
+
+Rubric note: the first version penalized cross-contract answers for citing contracts they had checked and ruled out,
+which failed four correct answers. That check was removed before publishing (see git history).
+
 ## Run it
 
 ```

@@ -62,8 +62,9 @@ def summary_table(part: dict, order: list[str]) -> str:
             "<th class=n>Latency / question</th><th class=n>Model calls</th></tr>" + "".join(rows) + "</table></div>")
 
 
-def explorer(part: dict, order: list[str], pid: str) -> str:
-    opts = "".join(f"<option value='{c}'>{LABELS[c][0]}</option>" for c in order if c in part)
+def explorer(part: dict, order: list[str], pid: str, default: str) -> str:
+    opts = "".join(f"<option value='{c}'{' selected' if c == default else ''}>{LABELS[c][0]}</option>"
+                   for c in order if c in part)
     blocks = []
     for c in order:
         if c not in part:
@@ -110,28 +111,35 @@ def build(run_dir: Path) -> str:
 built ahead of time answer as well as rereading the contracts, at a fraction of the tokens, and what happens when a
 contract is amended? Five public contracts from CUAD, 25 questions, a tool-using agent, and a plug-in slot where a
 learned memory (such as an Engram) would go.</p>
-<p class=muted>Model: {model}. Every model call is recorded in <code>runs/latest/calls.jsonl</code>, so the grades below can be
+<p class=muted>Model: {model} (served as claude-sonnet-5-5; Claude Code in print mode, no tools, the harness's own system prompt). Every model call is recorded in <code>runs/latest/calls.jsonl</code>, so the grades below can be
 re-checked with <code>python -m cmh.run --replay runs/latest</code> and no API key. Code:
 <a href="https://github.com/pg2342-hub/contract-memory-harness">github.com/pg2342-hub/contract-memory-harness</a></p>
 {tiles}
 <h2>1. Answer quality and cost on the contract bank</h2>
 <p>25 questions: 18 single facts, 4 terms the contract does not contain (the right answer is “not there”), and 3 that
 need several contracts. Grading is a fixed rubric (exact figure present, right contract cited, no made-up terms), not a
-model judging a model.</p>
+model judging a model. Citing a contract that the answer checked and ruled out is not penalized; the first version
+of the rubric did penalize it and failed four correct answers, so it was changed before publishing (the change is in
+the git history).</p>
 {summary_table(p1, o1)}
+<p><b>What it shows.</b> The precomputed memory matched long context on all 25 questions with about a ninth of the
+context per question, after a one-time offline build that cost a little more than one long-context question (109,525 tokens against 94,071). Retrieval
+and the tool agent were cheapest per question but missed 6 to 7 single facts, always by saying the term was not in what
+they found rather than by making one up.</p>
 <p class=muted>Context tokens are counted by the harness (about 4 characters per token) for what each config puts in
 the prompt. Billed input tokens are what the model provider reported, including its own fixed prompt overhead and cached reads.
 The precomputed memory also spent {nt.get('build_tokens', 0):,} tokens once, offline, to write its notes.</p>
-{explorer(p1, o1, 'p1')}
+{explorer(p1, o1, 'p1', 'long_context')}
 <h2>2. When a contract changes</h2>
 <p>Four amendments (written for this test and labeled as such) change five answers: a longer term, a new governing
 law, a shorter termination notice, and two minimum fees. A memory built before the change still answers from the old
 terms. The harness detects which contracts changed by comparing document hashes with the ones the memory was built
-from, then either guards (sends questions on changed contracts to retrieval) or rebuilds only those contracts.</p>
+from, then either guards (sends questions on changed contracts to retrieval) or rebuilds only those contracts. The rule this suggests for a deployment: until a memory is rebuilt, route any question
+on a contract family that changed since the last build to the current path.</p>
 <p><b>Contracts flagged stale:</b> {', '.join(st.get('stale_after_amendments', [])) or '-'}. <b>Rebuilt:</b> {rebuilt},
 for {st.get('rebuild_tokens', 0):,} tokens (the full build was {st.get('full_build_tokens', 0):,}).</p>
 {summary_table(p2, o2)}
-{explorer(p2, o2, 'p2')}
+{explorer(p2, o2, 'p2', 'notes_stale')}
 <h2>3. Plugging in a learned memory</h2>
 <p>Every config implements the same small interface in <code>cmh/memory.py</code>: <code>build(corpus)</code> runs
 offline, <code>context(question)</code> returns what goes in the prompt, and <code>stale_docs(corpus)</code> says which

@@ -74,9 +74,12 @@ class GradeTests(unittest.TestCase):
         q = {"id": "q10", "kind": "fact", "docs": ["verticalnet"], "must": [["4,500,000"]]}
         self.assertTrue(grade(q, {"found": True, "answer": "$4500000", "citations": ["verticalnet#3"]})["pass"])
 
-    def test_cross_wrong_citation(self):
+    def test_cross_question(self):
         q = {"id": "q23", "kind": "cross", "docs": ["dynamex"], "must": [["ontario"]], "wrong_docs": ["corio"]}
-        self.assertFalse(grade(q, {"found": True, "answer": "Ontario", "citations": ["dynamex", "corio"]})["pass"])
+        # citing a contract that was checked and ruled out is fine
+        self.assertTrue(grade(q, {"found": True, "answer": "Only Dynamex: Ontario. Corio is California.", "citations": ["dynamex", "corio"]})["pass"])
+        # missing the expected contract is not
+        self.assertFalse(grade(q, {"found": True, "answer": "Ontario", "citations": ["corio"]})["pass"])
 
 
 class MemoryTests(unittest.TestCase):

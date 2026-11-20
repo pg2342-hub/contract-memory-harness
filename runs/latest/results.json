@@ -1,0 +1,5297 @@
+{
+ "model": "claude-cli:sonnet",
+ "corpus": {
+  "contracts": {
+   "corio": {
+    "title": "License and Hosting Agreement",
+    "parties": "Corio Inc. and Commerce One, Inc.",
+    "tokens": 13640
+   },
+   "seaspine": {
+    "title": "Supply Agreement",
+    "parties": "PcoMed, LLC and Integra LifeSciences Corporation",
+    "tokens": 17702
+   },
+   "dynamex": {
+    "title": "Marketing and Transportation Services Agreement",
+    "parties": "Purolator Courier Ltd. and Parcelway Courier Systems Canada Ltd. (Dynamex)",
+    "tokens": 10448
+   },
+   "bnl": {
+    "title": "Outsourcing Agreement",
+    "parties": "Virtual Item Processing Systems, Inc. (VIP) and Brokers National Life Assurance Company (BNL)",
+    "tokens": 9823
+   },
+   "verticalnet": {
+    "title": "Maintenance and Support Agreement",
+    "parties": "VerticalNet, Inc. / VerticalNet Enterprises LLC and Converge, Inc.",
+    "tokens": 17440
+   }
+  },
+  "bank_tokens": 69221,
+  "amendments": [
+   "corio_amendment_1",
+   "bnl_amendment_1",
+   "dynamex_amendment_1",
+   "verticalnet_amendment_1"
+  ]
+ },
+ "part1": {
+  "long_context": {
+   "summary": {
+    "passed": 25,
+    "total": 25,
+    "by_kind": {
+     "fact": "18/18",
+     "absent": "4/4",
+     "cross": "3/3"
+    },
+    "fabricated": 0,
+    "stale": 0,
+    "mean_context_tokens": 69221,
+    "mean_billed_input_tokens": 94070.8,
+    "mean_output_tokens": 134.9,
+    "mean_latency_s": 1.43,
+    "mean_calls": 1,
+    "total_cost_usd": 9.4407,
+    "build_tokens": 0
+   },
+   "rows": [
+    {
+     "id": "q01",
+     "kind": "fact",
+     "question": "What law governs the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": true,
+      "answer": "The Corio and Commerce One agreement is governed by the laws of the State of California, USA, excluding conflict of laws provisions and the 1980 UN Convention on Contracts for the International Sale of Goods (Section 14.3). Disputes go to binding AAA arbitration before one arbitrator in San Francisco County, California.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94057,
+      "output_tokens": 132,
+      "latency_s": 1.31,
+      "cost_usd": 0.37754
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q02",
+     "kind": "fact",
+     "question": "How long is the initial term of the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": true,
+      "answer": "The initial term is five (5) years from the October 29, 1999 Effective Date (Section 11.1), after which it automatically renews for successive one-year periods unless either party gives written notice at least 30 days before expiration.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94063,
+      "output_tokens": 94,
+      "latency_s": 1.4,
+      "cost_usd": 0.37719
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q03",
+     "kind": "fact",
+     "question": "Under the Corio license and hosting agreement, how much notice must a party give to stop an automatic renewal?",
+     "output": {
+      "found": true,
+      "answer": "Under Section 11.1, the agreement runs five years and then auto-renews for successive one-year periods unless either party gives written notice at least thirty (30) days before the expiration of the initial five-year term or any one-year renewal.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94067,
+      "output_tokens": 97,
+      "latency_s": 1.59,
+      "cost_usd": 0.37723
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q04",
+     "kind": "fact",
+     "question": "How much written notice does either party need to give to terminate the Purolator and Dynamex transportation services agreement without cause?",
+     "output": {
+      "found": true,
+      "answer": "Either party may terminate the agreement without cause by giving two (2) years' written notice (Section 19.1).",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94072,
+      "output_tokens": 61,
+      "latency_s": 1.16,
+      "cost_usd": 0.37689
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q05",
+     "kind": "fact",
+     "question": "Which jurisdiction's law governs the Purolator and Dynamex transportation services agreement?",
+     "output": {
+      "found": true,
+      "answer": "The Purolator/Dynamex agreement is governed by the laws of the Province of Ontario (Section 36.1), and legal proceedings must be brought in a court of competent jurisdiction in Ontario.",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94065,
+      "output_tokens": 94,
+      "latency_s": 1.03,
+      "cost_usd": 0.3772
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q06",
+     "kind": "fact",
+     "question": "Under the Purolator and Dynamex agreement, what is the minimum cargo liability insurance each party must carry?",
+     "output": {
+      "found": true,
+      "answer": "Section 9.1(a) requires each party to carry cargo liability insurance with a combined single limit of not less than $100,000 inclusive per occurrence, naming the other party as additional insured with a cross liability clause.",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94075,
+      "output_tokens": 96,
+      "latency_s": 1.04,
+      "cost_usd": 0.37726
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q07",
+     "kind": "fact",
+     "question": "What is the minimum monthly fee BNL pays under its outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "Under Section 5(A) of the Outsourcing Agreement, the minimum monthly fee BNL pays VIP is $5,000 per month (the \"Minimum Fee\"), notwithstanding the charges in the Payment Schedule (Schedule B).",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94078,
+      "output_tokens": 112,
+      "latency_s": 1.18,
+      "cost_usd": 0.37743
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q08",
+     "kind": "fact",
+     "question": "Under the BNL outsourcing agreement, how much notice before the end of the initial term is needed to stop it continuing year to year?",
+     "output": {
+      "found": true,
+      "answer": "Under paragraph 15(B), the agreement continues year to year after the one-year Initial Term unless either party gives written notice of termination at least six (6) months before the end of the Initial Term.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94079,
+      "output_tokens": 86,
+      "latency_s": 1.03,
+      "cost_usd": 0.37717
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q09",
+     "kind": "fact",
+     "question": "What state's law governs the BNL outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "The BNL outsourcing agreement is governed by the laws of the State of Oklahoma, without regard to conflict of laws (paragraph 16(G)); litigation venue is in federal or state court in Austin, Texas or Oklahoma City, Oklahoma, subject to the arbitration requirement.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94069,
+      "output_tokens": 125,
+      "latency_s": 1.19,
+      "cost_usd": 0.37752
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q10",
+     "kind": "fact",
+     "question": "What minimum fee does Converge owe for services during the initial term of the VerticalNet maintenance and support agreement?",
+     "output": {
+      "found": true,
+      "answer": "Converge owes a minimum fee of $4,500,000 for Services during the Initial Term (through March 31, 2003), payable in 18 equal non-refundable monthly installments of $250,000, the first due on execution and the rest by the first of each month from November 2001 through March 2003.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94073,
+      "output_tokens": 119,
+      "latency_s": 1.33,
+      "cost_usd": 0.37748
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q11",
+     "kind": "fact",
+     "question": "When does the initial term of the VerticalNet and Converge maintenance and support agreement end?",
+     "output": {
+      "found": true,
+      "answer": "The Initial Term commences on the Effective Date (October 1, 2001) and continues until March 31, 2003 (Section 9.1). Renewal is only by mutual written agreement, for up to three one-year Renewal Terms.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94065,
+      "output_tokens": 102,
+      "latency_s": 1.08,
+      "cost_usd": 0.37728
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q12",
+     "kind": "fact",
+     "question": "What state's law governs the PcoMed and Integra supply agreement?",
+     "output": {
+      "found": true,
+      "answer": "The PcoMed and Integra Supply Agreement is governed by the laws of the State of New Jersey (Section 12.3). Disputes may be referred to binding arbitration in Denver, Colorado (Section 12.4).",
+      "citations": [
+       "seaspine"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94060,
+      "output_tokens": 100,
+      "latency_s": 1.17,
+      "cost_usd": 0.37724
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q13",
+     "kind": "fact",
+     "question": "After the VerticalNet and Converge maintenance agreement ends, for how long does the employee non-solicitation obligation continue?",
+     "output": {
+      "found": true,
+      "answer": "The non-solicitation obligation applies during the Term and for one year after it ends (Section 8 of the VerticalNet/Converge Maintenance and Support Agreement). Note that if Vert elects not to renew (a Vert Non-Renewal Election), the restriction stops applying to Converge's solicitation of VNE Service Personnel.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94076,
+      "output_tokens": 139,
+      "latency_s": 1.43,
+      "cost_usd": 0.37769
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q14",
+     "kind": "fact",
+     "question": "Under the Corio license agreement's audit clause, what size of underpayment makes Corio reimburse Commerce One for the cost of the audit?",
+     "output": {
+      "found": true,
+      "answer": "Under Section 4.4 of the Corio agreement, if an audit reveals an underpayment of more than five percent (5%) for the period under audit, Corio must reimburse Commerce One for the reasonable cost of the examination. Otherwise Commerce One bears the inspection costs.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94080,
+      "output_tokens": 117,
+      "latency_s": 1.42,
+      "cost_usd": 0.37749
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q15",
+     "kind": "fact",
+     "question": "Under the BNL outsourcing agreement, what is BNL's liability to VIP limited to?",
+     "output": {
+      "found": true,
+      "answer": "BNL's liability to VIP is limited to the amounts BNL paid VIP in the twelve (12) months before the claim accrued for the specific service at issue (or, if the claim accrues in the first 12 months of the initial term, the minimum fees payable during those first 12 months, i.e., $5,000 per month Minimum Fee). Claims by VIP for minimum fees and other fees/expenses owed under paragraphs 5, 15(a) and 15(c), and for breach of VIP's proprietary rights under paragraph 13, are excluded from this cap.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94068,
+      "output_tokens": 209,
+      "latency_s": 1.87,
+      "cost_usd": 0.37836
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q16",
+     "kind": "fact",
+     "question": "In the Purolator and Dynamex agreement, what per-kilogram liability limit do the parties' contracts of carriage set for loss, damage or delay?",
+     "output": {
+      "found": true,
+      "answer": "The parties' contracts of carriage limit liability for loss, damage or delay (including consequential loss) to $4.41 per kilogram, or $2.00 per pound, unless a higher value has been declared for insurance purposes (Section 6.3).",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94085,
+      "output_tokens": 106,
+      "latency_s": 1.24,
+      "cost_usd": 0.3774
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q17",
+     "kind": "fact",
+     "question": "Under the VerticalNet maintenance agreement's services warranty, within how many days must Converge report a breach?",
+     "output": {
+      "found": true,
+      "answer": "Under Section 5.1 of the VerticalNet Maintenance and Support Agreement, Converge must report a breach of the Services warranty to VNE in writing within 90 days following the date of performance of the Services in question.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94073,
+      "output_tokens": 98,
+      "latency_s": 1.04,
+      "cost_usd": 0.37727
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q18",
+     "kind": "fact",
+     "question": "Within how many days of the effective date must Commerce One sign a source code escrow agreement under the Corio agreement?",
+     "output": {
+      "found": true,
+      "answer": "Under Section 12.1 of the Corio agreement, Commerce One must execute the source code escrow agreement within sixty (60) days of the Effective Date (October 29, 1999).",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94073,
+      "output_tokens": 84,
+      "latency_s": 1.06,
+      "cost_usd": 0.37713
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q19",
+     "kind": "absent",
+     "question": "Does the BNL outsourcing agreement restrict either party from soliciting the other party's employees? If so, for how long?",
+     "output": {
+      "found": false,
+      "answer": "The BNL outsourcing agreement between VIP and BNL contains no employee non-solicitation provision. Its miscellaneous section (16) covers advertising, arbitration, assignment, confidentiality and similar terms, but nothing restricting either party from soliciting the other's employees. (The only non-solicitation clause in the material is Section 8 of the separate VerticalNet/Converge agreement, which is not the BNL contract.)",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94076,
+      "output_tokens": 167,
+      "latency_s": 1.66,
+      "cost_usd": 0.37797
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q20",
+     "kind": "absent",
+     "question": "Does the VerticalNet and Converge maintenance agreement require a source code escrow? If so, when must it be set up?",
+     "output": {
+      "found": false,
+      "answer": "The VerticalNet/Converge Maintenance and Support Agreement contains no source code escrow requirement. It says only that Vert has no obligation to deliver Source Code for any Maintenance Update or Converge-Requested Enhancement except as set forth in the Subscription License Agreement (Sections 2.13 and 3.12), and that agreement is not in the material provided.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94070,
+      "output_tokens": 149,
+      "latency_s": 1.33,
+      "cost_usd": 0.37777
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q21",
+     "kind": "absent",
+     "question": "What insurance does the Corio and Commerce One license agreement require either party to carry?",
+     "output": {
+      "found": false,
+      "answer": "The Corio and Commerce One License and Hosting Agreement contains no insurance requirement for either party; it has no insurance clause. (The insurance coverages of $100,000 cargo liability and $2,000,000 general liability appear only in the Purolator/Dynamex agreement, a different contract.)",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94062,
+      "output_tokens": 122,
+      "latency_s": 1.36,
+      "cost_usd": 0.37746
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q22",
+     "kind": "absent",
+     "question": "Does the PcoMed and Integra supply agreement bar either party from hiring away the other's employees? If so, for how long?",
+     "output": {
+      "found": false,
+      "answer": "The PcoMed/Integra Supply Agreement (seaspine) contains no employee non-solicitation or no-hire clause. Its confidentiality (Section 5) and other provisions do not restrict hiring the other party's employees, so no duration applies. The only employment-related language is a representation in 7.2(e) about a non-compete affecting a named individual's employment with PcoMed, which is not a mutual hiring bar.",
+      "citations": [
+       "seaspine"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94075,
+      "output_tokens": 164,
+      "latency_s": 1.7,
+      "cost_usd": 0.37794
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q23",
+     "kind": "cross",
+     "question": "Across the contract bank, which agreements are governed by the law of a jurisdiction outside the United States?",
+     "output": {
+      "found": true,
+      "answer": "Only the Purolator/Dynamex agreement (dynamex) is governed by non-US law: the laws of the Province of Ontario, Canada (Section 36.1). The others are US-governed: corio (California), seaspine (New Jersey), bnl (Oklahoma), and verticalnet (Pennsylvania and US federal law).",
+      "citations": [
+       "dynamex",
+       "corio",
+       "seaspine",
+       "bnl",
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94067,
+      "output_tokens": 159,
+      "latency_s": 1.7,
+      "cost_usd": 0.37785
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q24",
+     "kind": "cross",
+     "question": "Across the contract bank, which agreements state a minimum fee commitment in dollars, and what is each amount?",
+     "output": {
+      "found": true,
+      "answer": "Two agreements state dollar minimums. The BNL/VIP outsourcing agreement sets a Minimum Fee of $5,000 per month, and the VerticalNet/Converge agreement sets an Initial Term Minimum Fee of $4,500,000, payable in 18 monthly installments of $250,000. The PcoMed/Integra supply agreement has annual Minimum Payments, but the dollar amounts are redacted ([***]), so no figures are available.",
+      "citations": [
+       "bnl",
+       "verticalnet",
+       "seaspine"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "fact_2": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94068,
+      "output_tokens": 398,
+      "latency_s": 3.25,
+      "cost_usd": 0.38025
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q25",
+     "kind": "cross",
+     "question": "Across the contract bank, which agreements renew automatically unless a party gives notice, and how much notice does each require?",
+     "output": {
+      "found": true,
+      "answer": "Corio (Corio/Commerce One): after the 5-year initial term it auto-renews for successive 1-year periods unless either party gives written notice at least 30 days before the term or renewal expires. BNL (VIP/BNL): after the 1-year initial term it continues year to year unless either party gives written notice at least 6 months before the end of the then-current term. Dynamex/Purolator is indefinite (not a renewal) and can be ended on 2 years' notice; Integra/PcoMed and VerticalNet/Converge require mutual written agreement to renew, so they do not auto-renew.",
+      "citations": [
+       "corio",
+       "bnl",
+       "dynamex",
+       "seaspine",
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "fact_2": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 69221,
+      "billed_input_tokens": 94073,
+      "output_tokens": 242,
+      "latency_s": 2.29,
+      "cost_usd": 0.37871
+     },
+     "steps": [],
+     "note": ""
+    }
+   ]
+  },
+  "retrieval": {
+   "summary": {
+    "passed": 18,
+    "total": 25,
+    "by_kind": {
+     "fact": "12/18",
+     "absent": "4/4",
+     "cross": "2/3"
+    },
+    "fabricated": 0,
+    "stale": 0,
+    "mean_context_tokens": 3509.7,
+    "mean_billed_input_tokens": 6027.8,
+    "mean_output_tokens": 126.3,
+    "mean_latency_s": 1.28,
+    "mean_calls": 1,
+    "total_cost_usd": 0.613,
+    "build_tokens": 0
+   },
+   "rows": [
+    {
+     "id": "q01",
+     "kind": "fact",
+     "question": "What law governs the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": false,
+      "answer": "The provided excerpts do not state the governing law. Section 14.3 refers to arbitration and Section 14.4 to notices, but no governing-law clause appears in the material provided.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": false,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3488,
+      "billed_input_tokens": 5768,
+      "output_tokens": 82,
+      "latency_s": 1.02,
+      "cost_usd": 0.02389
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q02",
+     "kind": "fact",
+     "question": "How long is the initial term of the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": false,
+      "answer": "The provided excerpts do not state the initial term of the agreement. They reference a 'term of this Agreement' and fee years 1 through 5 and beyond in Exhibit B, but the term and termination section is not included, so no initial term length can be determined.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": false,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3587,
+      "billed_input_tokens": 6045,
+      "output_tokens": 104,
+      "latency_s": 1.11,
+      "cost_usd": 0.02522
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q03",
+     "kind": "fact",
+     "question": "Under the Corio license and hosting agreement, how much notice must a party give to stop an automatic renewal?",
+     "output": {
+      "found": true,
+      "answer": "Under Section 11.1, the agreement runs for an initial five (5) year term and then auto-renews for one (1) year periods unless either party gives written notice of its intention to terminate at least thirty (30) days before the end of the initial term or any one-year renewal.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3524,
+      "billed_input_tokens": 5976,
+      "output_tokens": 108,
+      "latency_s": 1.09,
+      "cost_usd": 0.02498
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q04",
+     "kind": "fact",
+     "question": "How much written notice does either party need to give to terminate the Purolator and Dynamex transportation services agreement without cause?",
+     "output": {
+      "found": true,
+      "answer": "Either party may terminate the agreement without cause by giving two (2) years' written notice (Section 19.1).",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3540,
+      "billed_input_tokens": 5912,
+      "output_tokens": 61,
+      "latency_s": 0.88,
+      "cost_usd": 0.02425
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q05",
+     "kind": "fact",
+     "question": "Which jurisdiction's law governs the Purolator and Dynamex transportation services agreement?",
+     "output": {
+      "found": false,
+      "answer": "The provided excerpts do not contain a governing law clause, so the governing jurisdiction is not stated in the material. The excerpts only reference Ontario for defining business days (s. 1.3) and the Canadian Excise Tax Act for GST purposes (s. 5.8), which do not establish governing law.",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": false,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3564,
+      "billed_input_tokens": 5969,
+      "output_tokens": 125,
+      "latency_s": 1.42,
+      "cost_usd": 0.02512
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q06",
+     "kind": "fact",
+     "question": "Under the Purolator and Dynamex agreement, what is the minimum cargo liability insurance each party must carry?",
+     "output": {
+      "found": true,
+      "answer": "Each party must carry cargo liability insurance with a combined single limit of not less than $100,000.00 inclusive per occurrence, naming the other party as an additional insured and including a cross liability clause (section 9.1(a)).",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3473,
+      "billed_input_tokens": 5933,
+      "output_tokens": 99,
+      "latency_s": 1.0,
+      "cost_usd": 0.02472
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q07",
+     "kind": "fact",
+     "question": "What is the minimum monthly fee BNL pays under its outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": false,
+      "answer": "The provided excerpts do not state the dollar amount of the Minimum Fee. The agreement refers to a 'Minimum Fee' in the termination cancellation-fee provision (paragraph 15), and Schedule B sets processing fees at $.305 per policy per month for all BNL plans, but the Minimum Fee figure itself is not in the material provided.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": false,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3256,
+      "billed_input_tokens": 6084,
+      "output_tokens": 142,
+      "latency_s": 1.45,
+      "cost_usd": 0.02575
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q08",
+     "kind": "fact",
+     "question": "Under the BNL outsourcing agreement, how much notice before the end of the initial term is needed to stop it continuing year to year?",
+     "output": {
+      "found": true,
+      "answer": "Either party must give written notice of termination at least six (6) months before the end of the one-year Initial Term (which began May 1, 2006); otherwise the Agreement continues year to year.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3204,
+      "billed_input_tokens": 5740,
+      "output_tokens": 83,
+      "latency_s": 1.04,
+      "cost_usd": 0.02379
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q09",
+     "kind": "fact",
+     "question": "What state's law governs the BNL outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "The agreement is governed by the laws of the State of Oklahoma, without regard to conflict of laws. Subject to the arbitration requirement in paragraph 16(C), litigation venue is in the appropriate federal or state court in Austin, Texas, or Oklahoma City, Oklahoma.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3285,
+      "billed_input_tokens": 6108,
+      "output_tokens": 123,
+      "latency_s": 1.04,
+      "cost_usd": 0.00443
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q10",
+     "kind": "fact",
+     "question": "What minimum fee does Converge owe for services during the initial term of the VerticalNet maintenance and support agreement?",
+     "output": {
+      "found": true,
+      "answer": "Converge owes a minimum fee of $4,500,000 (the \"Initial Term Minimum Fee\") for VNE's services during the Initial Term, payable in 18 equal non-refundable Monthly Installments of $250,000, with the first due on execution of the Agreement and the rest due by the first day of each month (November 2001 through March 2003).",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3600,
+      "billed_input_tokens": 6237,
+      "output_tokens": 142,
+      "latency_s": 1.31,
+      "cost_usd": 0.02636
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q11",
+     "kind": "fact",
+     "question": "When does the initial term of the VerticalNet and Converge maintenance and support agreement end?",
+     "output": {
+      "found": true,
+      "answer": "The Initial Term runs 18 months, with Monthly Installments of $250,000 payable through March 2003 (November 2001 through March 2003), so it ends in March 2003. The excerpt does not give an exact end date, since Section 9.1, which defines the Initial Term, is not included.",
+      "citations": [
+       "verticalnet#15",
+       "verticalnet#1"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": true,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3654,
+      "billed_input_tokens": 6290,
+      "output_tokens": 132,
+      "latency_s": 1.3,
+      "cost_usd": 0.02648
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q12",
+     "kind": "fact",
+     "question": "What state's law governs the PcoMed and Integra supply agreement?",
+     "output": {
+      "found": true,
+      "answer": "The PcoMed and Integra Supply Agreement is governed by and construed in accordance with the laws of the State of New Jersey (Section 12.3).",
+      "citations": [
+       "seaspine"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3579,
+      "billed_input_tokens": 6163,
+      "output_tokens": 76,
+      "latency_s": 0.98,
+      "cost_usd": 0.02541
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q13",
+     "kind": "fact",
+     "question": "After the VerticalNet and Converge maintenance agreement ends, for how long does the employee non-solicitation obligation continue?",
+     "output": {
+      "found": false,
+      "answer": "The provided excerpts do not state how long the employee non-solicitation obligation lasts after the agreement ends. Section 8 (the non-solicitation provision) is referenced in Sections 9.5 and 9.7 and is listed as surviving expiration or termination, but its text and any post-termination duration are not included in the material.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": false,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3685,
+      "billed_input_tokens": 6082,
+      "output_tokens": 131,
+      "latency_s": 1.39,
+      "cost_usd": 0.02563
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q14",
+     "kind": "fact",
+     "question": "Under the Corio license agreement's audit clause, what size of underpayment makes Corio reimburse Commerce One for the cost of the audit?",
+     "output": {
+      "found": true,
+      "answer": "If an audit reveals an underpayment of more than five percent (5%) for the period under audit, Corio must reimburse Commerce One for the reasonable cost of the examination.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3540,
+      "billed_input_tokens": 5839,
+      "output_tokens": 80,
+      "latency_s": 1.37,
+      "cost_usd": 0.02415
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q15",
+     "kind": "fact",
+     "question": "Under the BNL outsourcing agreement, what is BNL's liability to VIP limited to?",
+     "output": {
+      "found": true,
+      "answer": "BNL's liability to VIP for any cause of action or claim (contract, tort or otherwise) is limited to the amounts BNL paid to VIP in the twelve (12) month period before the claim accrued for the specific service at issue (or, if accrual occurs in the first 12 months of the initial term, the minimum fees payable by BNL to VIP during those first twelve months). This cap excludes claims for minimum fees and other fees and expenses owed under paragraphs 5, 15(a) and 15(c), and claims for breach of VIP's proprietary rights under paragraph 13; BNL also has no liability for consequential, exemplary, special, indirect, incidental or punitive damages.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3448,
+      "billed_input_tokens": 5927,
+      "output_tokens": 249,
+      "latency_s": 1.83,
+      "cost_usd": 0.02619
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q16",
+     "kind": "fact",
+     "question": "In the Purolator and Dynamex agreement, what per-kilogram liability limit do the parties' contracts of carriage set for loss, damage or delay?",
+     "output": {
+      "found": true,
+      "answer": "Section 6.3 states that the parties' contracts of carriage with their customers limit liability for loss, damage or delay, including consequential loss, to $4.41 per kilogram (or $2.00 per pound) unless a higher value has been declared for insurance purposes.",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3451,
+      "billed_input_tokens": 5717,
+      "output_tokens": 112,
+      "latency_s": 0.94,
+      "cost_usd": 0.02398
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q17",
+     "kind": "fact",
+     "question": "Under the VerticalNet maintenance agreement's services warranty, within how many days must Converge report a breach?",
+     "output": {
+      "found": true,
+      "answer": "Converge must report the breach to VNE in writing within 90 days following the date of performance of the Services in question; VNE's sole obligation and Converge's exclusive remedy is to repair, replace or re-perform the Services at no additional cost.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3589,
+      "billed_input_tokens": 7301,
+      "output_tokens": 104,
+      "latency_s": 1.33,
+      "cost_usd": 0.03024
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q18",
+     "kind": "fact",
+     "question": "Within how many days of the effective date must Commerce One sign a source code escrow agreement under the Corio agreement?",
+     "output": {
+      "found": true,
+      "answer": "Under Section 12.1 of the Corio agreement, Commerce One must execute the source code escrow agreement within sixty (60) days of the Effective Date.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3520,
+      "billed_input_tokens": 5964,
+      "output_tokens": 76,
+      "latency_s": 1.03,
+      "cost_usd": 0.02461
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q19",
+     "kind": "absent",
+     "question": "Does the BNL outsourcing agreement restrict either party from soliciting the other party's employees? If so, for how long?",
+     "output": {
+      "found": false,
+      "answer": "The provided BNL outsourcing agreement excerpts (VIP and Brokers National Life Assurance Company) do not contain an employee non-solicitation provision. The only non-solicitation clause in the material is in a different contract, the VerticalNet/Converge agreement, so it does not answer this question for BNL.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3482,
+      "billed_input_tokens": 5973,
+      "output_tokens": 127,
+      "latency_s": 1.35,
+      "cost_usd": 0.02516
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q20",
+     "kind": "absent",
+     "question": "Does the VerticalNet and Converge maintenance agreement require a source code escrow? If so, when must it be set up?",
+     "output": {
+      "found": false,
+      "answer": "The provided portions of the VerticalNet/Converge Maintenance and Support Agreement (2001-10-09) contain no source code escrow requirement. They only say Vert has no obligation to deliver Source Code for Maintenance Updates or Converge-Requested Enhancements except as set out in the Subscription License Agreement, so no setup deadline appears. The only escrow provision in the material (60 days from the Effective Date) is in the separate Corio/Commerce One agreement.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3604,
+      "billed_input_tokens": 6037,
+      "output_tokens": 184,
+      "latency_s": 1.73,
+      "cost_usd": 0.02598
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q21",
+     "kind": "absent",
+     "question": "What insurance does the Corio and Commerce One license agreement require either party to carry?",
+     "output": {
+      "found": false,
+      "answer": "The provided Corio and Commerce One License and Hosting Agreement excerpts do not contain an insurance requirement for either party. The insurance provisions (Section 9) in the material belong to a different agreement, the Purolator/Parcelway (Dynamex) agreement, so they cannot be applied to Corio.",
+      "citations": []
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3524,
+      "billed_input_tokens": 5780,
+      "output_tokens": 121,
+      "latency_s": 1.23,
+      "cost_usd": 0.02433
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q22",
+     "kind": "absent",
+     "question": "Does the PcoMed and Integra supply agreement bar either party from hiring away the other's employees? If so, for how long?",
+     "output": {
+      "found": false,
+      "answer": "The provided excerpts of the PcoMed/Integra Supply Agreement contain no employee non-solicitation or no-hire provision, so no restriction or duration can be stated. The only employment-related language is PcoMed's representation in Section 7.2(e) about a non-compete applicable to an individual, which is not a mutual bar on hiring the other party's employees.",
+      "citations": [
+       "seaspine"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3552,
+      "billed_input_tokens": 6175,
+      "output_tokens": 144,
+      "latency_s": 1.44,
+      "cost_usd": 0.02614
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q23",
+     "kind": "cross",
+     "question": "Across the contract bank, which agreements are governed by the law of a jurisdiction outside the United States?",
+     "output": {
+      "found": false,
+      "answer": "None of the provided agreements is governed by non-U.S. law. The governing laws shown are Pennsylvania/United States (verticalnet), California (corio) and Oklahoma (bnl). The dynamex and seaspine excerpts do not include a governing-law clause, so their governing law is not in the material (dynamex is a Canadian-currency agreement between Canadian parties, but no governing law is stated).",
+      "citations": [
+       "verticalnet",
+       "corio",
+       "bnl",
+       "dynamex",
+       "seaspine"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": false,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3530,
+      "billed_input_tokens": 5930,
+      "output_tokens": 180,
+      "latency_s": 1.61,
+      "cost_usd": 0.02552
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q24",
+     "kind": "cross",
+     "question": "Across the contract bank, which agreements state a minimum fee commitment in dollars, and what is each amount?",
+     "output": {
+      "found": true,
+      "answer": "Two agreements in the provided material state a dollar minimum fee: the VerticalNet/Converge Maintenance and Support Agreement sets an Initial Term Minimum Fee of $4,500,000, payable in 18 monthly installments of $250,000; and the BNL/VIP Outsourcing Agreement sets a minimum monthly fee of not less than $5,000 per month.",
+      "citations": [
+       "verticalnet",
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "fact_2": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3608,
+      "billed_input_tokens": 5933,
+      "output_tokens": 159,
+      "latency_s": 1.41,
+      "cost_usd": 0.02532
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q25",
+     "kind": "cross",
+     "question": "Across the contract bank, which agreements renew automatically unless a party gives notice, and how much notice does each require?",
+     "output": {
+      "found": true,
+      "answer": "Two agreements in the material renew automatically unless a party gives notice: Corio/Commerce One (corio) renews for successive one-year periods after the initial 5-year term unless either party gives written notice at least 30 days before expiry of the initial term or any one-year renewal; and BNL/VIP (bnl) continues year to year after the one-year Initial Term unless either party gives written notice at least 6 months before the end of the Initial Term or the then-current Extended Term (a cancellation fee applies if BNL gives less than 6 months' notice in an Extended Term).",
+      "citations": [
+       "corio",
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "fact_2": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3456,
+      "billed_input_tokens": 5813,
+      "output_tokens": 213,
+      "latency_s": 1.61,
+      "cost_usd": 0.02538
+     },
+     "steps": [],
+     "note": ""
+    }
+   ]
+  },
+  "agent": {
+   "summary": {
+    "passed": 19,
+    "total": 25,
+    "by_kind": {
+     "fact": "13/18",
+     "absent": "4/4",
+     "cross": "2/3"
+    },
+    "fabricated": 0,
+    "stale": 0,
+    "mean_context_tokens": 5077.7,
+    "mean_billed_input_tokens": 12728.8,
+    "mean_output_tokens": 491.6,
+    "mean_latency_s": 7.27,
+    "mean_calls": 5.4,
+    "total_cost_usd": 1.3929,
+    "build_tokens": 0
+   },
+   "rows": [
+    {
+     "id": "q01",
+     "kind": "fact",
+     "question": "What law governs the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": true,
+      "answer": "The Corio\u2013Commerce One License and Hosting Agreement (dated October 29, 1999) is governed by the laws of the State of California, USA, excluding its conflict of laws provisions and excluding the 1980 United Nations Convention on Contracts for the International Sale of Goods (Section 14.3). Disputes are resolved by binding arbitration under the American Arbitration Association's commercial rules, before one arbitrator in San Francisco County, California. My searches did not surface any amendment that changes this provision.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 5,
+      "context_tokens": 4074,
+      "billed_input_tokens": 10619,
+      "output_tokens": 368,
+      "latency_s": 6.75,
+      "cost_usd": 0.04614
+     },
+     "steps": [
+      {
+       "search": "Corio governing law license and hosting agreement",
+       "results": [
+        "corio#0",
+        "corio#3",
+        "corio#1",
+        "corio#23",
+        "corio#4"
+       ]
+      },
+      {
+       "search": "governed by laws of State of California jurisdiction venue",
+       "results": [
+        "bnl#18",
+        "corio#22",
+        "dynamex#20",
+        "seaspine#31",
+        "bnl#17"
+       ]
+      },
+      {
+       "read": "corio#22"
+      },
+      {
+       "search": "Corio Commerce One amendment to License and Hosting Agreement",
+       "results": [
+        "corio#0",
+        "corio#3",
+        "corio#21",
+        "corio#4",
+        "corio#18"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q02",
+     "kind": "fact",
+     "question": "How long is the initial term of the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": false,
+      "answer": "The initial term of the Corio and Commerce One License and Hosting Agreement (dated October 29, 1999) is not in the material I read. My searches and the one chunk I read in full (corio#17, which covers the effects of termination and the source code escrow) did not reach the term provision, and I found no amendment that addresses it. I can't state the length of the initial term without guessing.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": false,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 5184,
+      "billed_input_tokens": 13649,
+      "output_tokens": 387,
+      "latency_s": 7.06,
+      "cost_usd": 0.05844
+     },
+     "steps": [
+      {
+       "search": "Corio Commerce One initial term license hosting agreement",
+       "results": [
+        "corio#0",
+        "corio#3",
+        "corio#24",
+        "corio#8",
+        "corio#4"
+       ]
+      },
+      {
+       "search": "initial term years term of agreement renewal",
+       "results": [
+        "verticalnet#15",
+        "verticalnet#25",
+        "corio#16",
+        "verticalnet#3",
+        "verticalnet#27"
+       ]
+      },
+      {
+       "search": "Corio term of this Agreement shall commence Effective Date continue for years unless terminated",
+       "results": [
+        "bnl#15",
+        "seaspine#12",
+        "corio#16",
+        "dynamex#1",
+        "verticalnet#25"
+       ]
+      },
+      {
+       "search": "Corio term and termination initial term Commerce One",
+       "results": [
+        "corio#16",
+        "corio#10",
+        "corio#11",
+        "corio#20",
+        "corio#27"
+       ]
+      },
+      {
+       "read": "corio#17"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q03",
+     "kind": "fact",
+     "question": "Under the Corio license and hosting agreement, how much notice must a party give to stop an automatic renewal?",
+     "output": {
+      "found": false,
+      "answer": "The material I was able to read does not contain the automatic-renewal notice period for the Corio License and Hosting Agreement. My searches did not surface a term or renewal section, and the only Corio chunks I read (corio#17, covering survival after termination and source code escrow) do not address renewal or non-renewal notice. I also did not find an amendment changing this. I cannot state the notice period without guessing.",
+      "citations": []
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": false,
+       "fact_1": false,
+       "cites_expected": false
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 5271,
+      "billed_input_tokens": 13925,
+      "output_tokens": 547,
+      "latency_s": 8.0,
+      "cost_usd": 0.06115
+     },
+     "steps": [
+      {
+       "search": "Corio automatic renewal notice of non-renewal term",
+       "results": [
+        "verticalnet#27",
+        "verticalnet#25",
+        "corio#16",
+        "verticalnet#15",
+        "bnl#4"
+       ]
+      },
+      {
+       "search": "Corio agreement term renewal automatically renew unless written notice days prior",
+       "results": [
+        "corio#16",
+        "verticalnet#27",
+        "verticalnet#25",
+        "verticalnet#26",
+        "bnl#15"
+       ]
+      },
+      {
+       "search": "Corio term of agreement renewal terms successive period",
+       "results": [
+        "corio#16",
+        "verticalnet#27",
+        "verticalnet#25",
+        "verticalnet#15",
+        "corio#20"
+       ]
+      },
+      {
+       "search": "Customer Corio initial term renew additional one year terms unless either party notifies non-renewal",
+       "results": [
+        "corio#16",
+        "verticalnet#25",
+        "verticalnet#27",
+        "bnl#15",
+        "verticalnet#15"
+       ]
+      },
+      {
+       "read": "corio#17"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q04",
+     "kind": "fact",
+     "question": "How much written notice does either party need to give to terminate the Purolator and Dynamex transportation services agreement without cause?",
+     "output": {
+      "found": true,
+      "answer": "Either party may terminate the agreement without cause by giving two (2) years' written notice (Section 19.1). No amendment to this provision was found in the bank.",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 5,
+      "context_tokens": 4129,
+      "billed_input_tokens": 10987,
+      "output_tokens": 238,
+      "latency_s": 4.63,
+      "cost_usd": 0.04631
+     },
+     "steps": [
+      {
+       "search": "Dynamex Purolator terminate without cause written notice",
+       "results": [
+        "dynamex#15",
+        "dynamex#4",
+        "dynamex#1",
+        "dynamex#16",
+        "dynamex#3"
+       ]
+      },
+      {
+       "search": "termination without cause days prior written notice term of agreement",
+       "results": [
+        "dynamex#15",
+        "bnl#15",
+        "seaspine#13",
+        "verticalnet#24",
+        "corio#16"
+       ]
+      },
+      {
+       "read": "dynamex#15"
+      },
+      {
+       "search": "Dynamex Purolator amendment termination without cause notice",
+       "results": [
+        "dynamex#15",
+        "dynamex#16",
+        "dynamex#4",
+        "dynamex#3",
+        "bnl#16"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q05",
+     "kind": "fact",
+     "question": "Which jurisdiction's law governs the Purolator and Dynamex transportation services agreement?",
+     "output": {
+      "found": true,
+      "answer": "The agreement is governed by and construed in accordance with the laws of the Province of Ontario (Canada). Section 36.1 also requires that all legal proceedings arising out of the agreement be brought in a court of competent jurisdiction in Ontario, and the parties attorn to that court's jurisdiction. Arbitration under Article 39 is held in the Municipality of Metropolitan Toronto. No amendment to this provision was found in the material searched.",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 5,
+      "context_tokens": 3750,
+      "billed_input_tokens": 10450,
+      "output_tokens": 303,
+      "latency_s": 5.28,
+      "cost_usd": 0.04481
+     },
+     "steps": [
+      {
+       "search": "Dynamex Purolator governing law jurisdiction",
+       "results": [
+        "dynamex#16",
+        "dynamex#3",
+        "dynamex#1",
+        "dynamex#0",
+        "dynamex#4"
+       ]
+      },
+      {
+       "search": "governed by laws of Province Ontario courts attorn",
+       "results": [
+        "dynamex#20",
+        "corio#22",
+        "bnl#17",
+        "verticalnet#29",
+        "dynamex#15"
+       ]
+      },
+      {
+       "search": "Agreement shall be governed by and construed in accordance with the laws",
+       "results": [
+        "dynamex#20",
+        "corio#22",
+        "verticalnet#29",
+        "seaspine#31",
+        "bnl#17"
+       ]
+      },
+      {
+       "read": "dynamex#20"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q06",
+     "kind": "fact",
+     "question": "Under the Purolator and Dynamex agreement, what is the minimum cargo liability insurance each party must carry?",
+     "output": {
+      "found": true,
+      "answer": "Under Section 9.1(a) of the Purolator/Dynamex Marketing and Transportation Services Agreement (dated 20 November 1995), each party must purchase and maintain, at its own expense, cargo liability insurance with a combined single limit of not less than $100,000 (Canadian currency, per Section 1.2) inclusive per occurrence. The other party must be named as an additional insured, and the policy must contain a cross liability clause. No amendment to this agreement turned up in the searches, so the original terms are the ones reported.",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 6593,
+      "billed_input_tokens": 15327,
+      "output_tokens": 477,
+      "latency_s": 7.08,
+      "cost_usd": 0.06605
+     },
+     "steps": [
+      {
+       "search": "Dynamex Purolator cargo liability insurance minimum",
+       "results": [
+        "dynamex#8",
+        "dynamex#16",
+        "dynamex#3",
+        "dynamex#1",
+        "dynamex#0"
+       ]
+      },
+      {
+       "search": "insurance cargo liability each party shall maintain",
+       "results": [
+        "dynamex#8",
+        "dynamex#9",
+        "bnl#13",
+        "bnl#12",
+        "dynamex#7"
+       ]
+      },
+      {
+       "read": "dynamex#9"
+      },
+      {
+       "read": "dynamex#8"
+      },
+      {
+       "search": "Dynamex Purolator amendment insurance cargo",
+       "results": [
+        "dynamex#16",
+        "dynamex#8",
+        "dynamex#3",
+        "dynamex#1",
+        "dynamex#0"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q07",
+     "kind": "fact",
+     "question": "What is the minimum monthly fee BNL pays under its outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": false,
+      "answer": "The minimum monthly fee amount is not in the material I read. The BNL Outsourcing Agreement refers to a 'Minimum Fee' in the termination provision (paragraph 15, cancellation fee), but the chunks I read did not state a dollar figure for it. I also found no amendment that sets or changes it. The fee figures are in Schedules A and B, and I did not locate the text of those schedules. The only dollar amount I found tied to termination is a $30,000 floor on the cancellation fee, which is not the monthly minimum.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": false,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 6081,
+      "billed_input_tokens": 14716,
+      "output_tokens": 462,
+      "latency_s": 8.53,
+      "cost_usd": 0.06346
+     },
+     "steps": [
+      {
+       "search": "BNL minimum monthly fee Virtual Item Processing Systems",
+       "results": [
+        "bnl#0",
+        "bnl#20",
+        "bnl#16",
+        "bnl#21",
+        "bnl#3"
+       ]
+      },
+      {
+       "search": "Minimum Fee monthly BNL amendment",
+       "results": [
+        "bnl#16",
+        "bnl#3",
+        "verticalnet#15",
+        "bnl#15",
+        "bnl#5"
+       ]
+      },
+      {
+       "read": "bnl#16"
+      },
+      {
+       "search": "Schedule A Schedule of Charges and Fees Minimum Fee per month",
+       "results": [
+        "bnl#3",
+        "bnl#21",
+        "bnl#15",
+        "bnl#4",
+        "verticalnet#15"
+       ]
+      },
+      {
+       "read": "bnl#4"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q08",
+     "kind": "fact",
+     "question": "Under the BNL outsourcing agreement, how much notice before the end of the initial term is needed to stop it continuing year to year?",
+     "output": {
+      "found": false,
+      "answer": "The term and renewal provision of the BNL Outsourcing Agreement was not found in the material I retrieved. My searches returned only other sections (limitation of liability, VIP obligations, additional services, and fees), and I found no amendment changing the term. I therefore cannot say how much notice is required before the end of the initial term to stop year-to-year continuation.",
+      "citations": []
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": false,
+       "fact_1": false,
+       "cites_expected": false
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 5324,
+      "billed_input_tokens": 13984,
+      "output_tokens": 601,
+      "latency_s": 8.45,
+      "cost_usd": 0.06192
+     },
+     "steps": [
+      {
+       "search": "BNL outsourcing agreement term renewal year to year notice of non-renewal",
+       "results": [
+        "corio#16",
+        "verticalnet#25",
+        "verticalnet#27",
+        "bnl#15",
+        "bnl#4"
+       ]
+      },
+      {
+       "search": "BNL initial term automatically renew successive one year terms written notice prior to expiration",
+       "results": [
+        "corio#16",
+        "bnl#15",
+        "verticalnet#27",
+        "verticalnet#25",
+        "verticalnet#26"
+       ]
+      },
+      {
+       "search": "BNL term of agreement initial term years renew",
+       "results": [
+        "bnl#15",
+        "verticalnet#15",
+        "corio#16",
+        "verticalnet#25",
+        "bnl#12"
+       ]
+      },
+      {
+       "search": "BNL agreement shall continue term thereafter renew unless either party gives notice days prior termination",
+       "results": [
+        "bnl#15",
+        "corio#16",
+        "seaspine#13",
+        "seaspine#12",
+        "verticalnet#26"
+       ]
+      },
+      {
+       "read": "bnl#13"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q09",
+     "kind": "fact",
+     "question": "What state's law governs the BNL outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "The BNL Outsourcing Agreement between Virtual Item Processing Systems, Inc. (VIP) and Brokers National Life Assurance Company (BNL) is governed by the laws of the State of Oklahoma, without regard to conflict of laws (Section 16(G), Choice of Law). Litigation jurisdiction and venue, subject to the arbitration requirement, lie in the appropriate federal or state court in Austin, Texas, or Oklahoma City, Oklahoma. No amendment to this agreement was found in the material I searched.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 6593,
+      "billed_input_tokens": 15719,
+      "output_tokens": 353,
+      "latency_s": 7.35,
+      "cost_usd": 0.06401
+     },
+     "steps": [
+      {
+       "search": "BNL Virtual Item Processing Systems governing law",
+       "results": [
+        "bnl#0",
+        "bnl#20",
+        "bnl#21",
+        "bnl#14",
+        "bnl#2"
+       ]
+      },
+      {
+       "read": "bnl#20"
+      },
+      {
+       "search": "governed by laws of the State of construed governing law",
+       "results": [
+        "seaspine#31",
+        "dynamex#20",
+        "verticalnet#29",
+        "seaspine#30",
+        "corio#22"
+       ]
+      },
+      {
+       "search": "BNL agreement governed by laws of Oklahoma",
+       "results": [
+        "bnl#18",
+        "bnl#17",
+        "bnl#0",
+        "dynamex#20",
+        "bnl#11"
+       ]
+      },
+      {
+       "read": "bnl#18"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q10",
+     "kind": "fact",
+     "question": "What minimum fee does Converge owe for services during the initial term of the VerticalNet maintenance and support agreement?",
+     "output": {
+      "found": true,
+      "answer": "Converge owes an Initial Term Minimum Fee of $4,500,000 for VNE's provision of the Services during the Initial Term. It is payable in 18 equal non-refundable Monthly Installments of $250,000 each. The first installment is due on the date the agreement is executed and delivered by both parties (agreement dated October 9, 2001). Later installments are due no later than the first day of each month during the Initial Term (November 2001 through March 2003). My searches did not turn up any amendment changing this fee.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 4,
+      "context_tokens": 3068,
+      "billed_input_tokens": 8358,
+      "output_tokens": 383,
+      "latency_s": 5.27,
+      "cost_usd": 0.03725
+     },
+     "steps": [
+      {
+       "search": "VerticalNet maintenance support minimum fee initial term Converge",
+       "results": [
+        "verticalnet#15",
+        "verticalnet#14",
+        "verticalnet#3",
+        "verticalnet#0",
+        "verticalnet#34"
+       ]
+      },
+      {
+       "read": "verticalnet#15"
+      },
+      {
+       "search": "amendment VerticalNet Converge Initial Term Minimum Fee amended",
+       "results": [
+        "verticalnet#14",
+        "verticalnet#15",
+        "bnl#16",
+        "verticalnet#0",
+        "bnl#15"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q11",
+     "kind": "fact",
+     "question": "When does the initial term of the VerticalNet and Converge maintenance and support agreement end?",
+     "output": {
+      "found": true,
+      "answer": "The initial term ends at the end of March 2003. Section 4.1 sets the Initial Term Minimum Fee ($4,500,000) as 18 monthly installments of $250,000, the first due when the agreement was signed on October 9, 2001. The remaining installments are due on the first day of each month during the Initial Term, which Section 4.1 describes as running from November 2001 through March 2003. I did not find the term section itself (Section 9.1), and I found no amendment changing the term, so this rests on the payment provision.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": true,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 6422,
+      "billed_input_tokens": 15206,
+      "output_tokens": 766,
+      "latency_s": 9.13,
+      "cost_usd": 0.06846
+     },
+     "steps": [
+      {
+       "search": "VerticalNet Converge maintenance and support agreement initial term",
+       "results": [
+        "verticalnet#3",
+        "verticalnet#0",
+        "verticalnet#15",
+        "verticalnet#34",
+        "verticalnet#2"
+       ]
+      },
+      {
+       "read": "verticalnet#15"
+      },
+      {
+       "search": "Section 9.1 term of agreement initial term expire amendment",
+       "results": [
+        "verticalnet#25",
+        "verticalnet#15",
+        "bnl#16",
+        "verticalnet#14",
+        "dynamex#9"
+       ]
+      },
+      {
+       "search": "term of agreement commence effective date continue until March 2003 unless terminated; amendment",
+       "results": [
+        "verticalnet#25",
+        "bnl#15",
+        "seaspine#12",
+        "verticalnet#15",
+        "dynamex#1"
+       ]
+      },
+      {
+       "search": "Initial Term shall commence on the Effective Date and end on Term of Agreement 9.1",
+       "results": [
+        "bnl#15",
+        "verticalnet#25",
+        "seaspine#12",
+        "corio#16",
+        "verticalnet#15"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q12",
+     "kind": "fact",
+     "question": "What state's law governs the PcoMed and Integra supply agreement?",
+     "output": {
+      "found": true,
+      "answer": "The PcoMed and Integra Supply Agreement (dated 2013-05-15) is governed by the laws of the State of New Jersey. Section 12.3 (Governing Law) states that the Agreement 'shall be construed and enforced in accordance with the laws of the State of New Jersey.' Disputes that are not resolved by negotiation may go to binding arbitration in Denver, Colorado, but that does not change the governing law. My searches did not turn up any amendment that changes this provision.",
+      "citations": [
+       "seaspine"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 5,
+      "context_tokens": 4079,
+      "billed_input_tokens": 10952,
+      "output_tokens": 353,
+      "latency_s": 5.73,
+      "cost_usd": 0.04732
+     },
+     "steps": [
+      {
+       "search": "governing law supply agreement PcoMed Integra",
+       "results": [
+        "seaspine#0",
+        "seaspine#20",
+        "seaspine#30",
+        "seaspine#31",
+        "seaspine#16"
+       ]
+      },
+      {
+       "search": "governed by laws of the State of construed governing law jurisdiction",
+       "results": [
+        "seaspine#31",
+        "dynamex#20",
+        "corio#22",
+        "bnl#18",
+        "verticalnet#29"
+       ]
+      },
+      {
+       "read": "seaspine#31"
+      },
+      {
+       "search": "amendment to supply agreement PcoMed Integra governing law",
+       "results": [
+        "seaspine#0",
+        "seaspine#20",
+        "seaspine#30",
+        "seaspine#31",
+        "seaspine#16"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q13",
+     "kind": "fact",
+     "question": "After the VerticalNet and Converge maintenance agreement ends, for how long does the employee non-solicitation obligation continue?",
+     "output": {
+      "found": true,
+      "answer": "The employee non-solicitation obligation (Section 8) applies during the Term of the Agreement and continues for one year after the Agreement ends. During that period, Converge and VerticalNet may not directly or indirectly solicit, encourage, or cause others to solicit or encourage the other party's employees or individual independent contractors to leave and join the soliciting party or its Affiliate. Responding to unsolicited employment inquiries and general, untargeted job postings or advertising is not prohibited. I did not find any amendment changing this period in the material I read.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 5,
+      "context_tokens": 4612,
+      "billed_input_tokens": 11261,
+      "output_tokens": 377,
+      "latency_s": 5.54,
+      "cost_usd": 0.04879
+     },
+     "steps": [
+      {
+       "search": "VerticalNet Converge non-solicitation employees",
+       "results": [
+        "verticalnet#27",
+        "verticalnet#30",
+        "verticalnet#0",
+        "verticalnet#31",
+        "verticalnet#1"
+       ]
+      },
+      {
+       "search": "solicit hire employees period after termination of Agreement",
+       "results": [
+        "verticalnet#25",
+        "verticalnet#24",
+        "verticalnet#26",
+        "seaspine#13",
+        "corio#16"
+       ]
+      },
+      {
+       "read": "verticalnet#25"
+      },
+      {
+       "read": "verticalnet#24"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q14",
+     "kind": "fact",
+     "question": "Under the Corio license agreement's audit clause, what size of underpayment makes Corio reimburse Commerce One for the cost of the audit?",
+     "output": {
+      "found": true,
+      "answer": "Under the Corio License and Hosting Agreement audit clause, if an inspection reveals an underpayment of more than five percent (5%) for the period under audit, Corio must reimburse Commerce One for the reasonable cost of the examination. Otherwise Commerce One bears the costs of the inspection, and any shortfall or overpayment is simply paid or refunded. No amendment to this clause turned up in the searches.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 4,
+      "context_tokens": 3033,
+      "billed_input_tokens": 8121,
+      "output_tokens": 319,
+      "latency_s": 5.47,
+      "cost_usd": 0.03566
+     },
+     "steps": [
+      {
+       "search": "Corio audit underpayment reimburse Commerce One cost of audit",
+       "results": [
+        "corio#9",
+        "corio#8",
+        "seaspine#19",
+        "corio#6",
+        "corio#19"
+       ]
+      },
+      {
+       "read": "corio#9"
+      },
+      {
+       "search": "amendment Corio audit underpayment percent reimburse examination",
+       "results": [
+        "corio#9",
+        "corio#8",
+        "corio#21",
+        "seaspine#19",
+        "verticalnet#11"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q15",
+     "kind": "fact",
+     "question": "Under the BNL outsourcing agreement, what is BNL's liability to VIP limited to?",
+     "output": {
+      "found": true,
+      "answer": "Under paragraph 11 (BNL Limitation of Liability) of the BNL Outsourcing Agreement, BNL's liability to VIP for any reason and upon any cause of action or claim in contract, tort or otherwise is limited to the amounts BNL paid to VIP in the twelve (12) month period prior to the accrual of the action or claim, for the specific service that is the subject of the claim. If the claim accrues during the first twelve months of the initial term, liability is limited to the minimum fees payable by BNL to VIP during those first twelve months. The limit applies to all claims in the aggregate (including breach of contract, breach of warranty, negligence, strict liability, misrepresentation and other torts). Exclusions: claims by VIP for minimum fees and other fees and expenses owing under paragraphs 5, 15(a) and 15(c), and claims for BNL's breach of VIP's proprietary rights under paragraph 13, are not subject to the cap. BNL also has no liability for consequential, exemplary, special, indirect, incidental or punitive damages. No amendment to this provision was found in the search results.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 5,
+      "context_tokens": 5051,
+      "billed_input_tokens": 11911,
+      "output_tokens": 615,
+      "latency_s": 6.57,
+      "cost_usd": 0.05377
+     },
+     "steps": [
+      {
+       "search": "BNL liability to VIP limited",
+       "results": [
+        "bnl#10",
+        "bnl#12",
+        "bnl#13",
+        "bnl#5",
+        "bnl#9"
+       ]
+      },
+      {
+       "read": "bnl#13"
+      },
+      {
+       "read": "bnl#12"
+      },
+      {
+       "search": "amendment BNL limitation of liability paragraph 11",
+       "results": [
+        "bnl#12",
+        "bnl#10",
+        "bnl#16",
+        "bnl#13",
+        "bnl#8"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q16",
+     "kind": "fact",
+     "question": "In the Purolator and Dynamex agreement, what per-kilogram liability limit do the parties' contracts of carriage set for loss, damage or delay?",
+     "output": {
+      "found": true,
+      "answer": "Section 6.3 of the Purolator/Dynamex (Parcelway Courier Systems Canada Ltd.) Marketing and Transportation Services Agreement (1995-11-20) says the parties acknowledge that their contracts of carriage with their customers limit liability for loss, damage or delay, including consequential loss, to $4.41 per kilogram or $2.00 per pound, unless a higher value has been declared for insurance purposes. A search for amendments turned up none changing this limit.",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 5,
+      "context_tokens": 5298,
+      "billed_input_tokens": 12207,
+      "output_tokens": 399,
+      "latency_s": 6.82,
+      "cost_usd": 0.0528
+     },
+     "steps": [
+      {
+       "search": "contracts of carriage limit of liability per kilogram loss damage delay",
+       "results": [
+        "dynamex#7",
+        "dynamex#8",
+        "dynamex#6",
+        "dynamex#9",
+        "dynamex#11"
+       ]
+      },
+      {
+       "read": "dynamex#8"
+      },
+      {
+       "read": "dynamex#7"
+      },
+      {
+       "search": "amendment Dynamex Purolator liability per kilogram amended section 6.3",
+       "results": [
+        "dynamex#7",
+        "dynamex#3",
+        "verticalnet#21",
+        "dynamex#2",
+        "dynamex#1"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q17",
+     "kind": "fact",
+     "question": "Under the VerticalNet maintenance agreement's services warranty, within how many days must Converge report a breach?",
+     "output": {
+      "found": true,
+      "answer": "Under Section 5.1 of the VerticalNet Maintenance and Support Agreement, Converge must report a breach of the services warranty to VNE in writing within 90 days following the date of performance of the Services in question. No amendment changing this period turned up in the searches.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 4,
+      "context_tokens": 3066,
+      "billed_input_tokens": 9081,
+      "output_tokens": 232,
+      "latency_s": 4.67,
+      "cost_usd": 0.03863
+     },
+     "steps": [
+      {
+       "search": "VerticalNet services warranty Converge report breach within days",
+       "results": [
+        "verticalnet#19",
+        "verticalnet#18",
+        "verticalnet#34",
+        "verticalnet#26",
+        "verticalnet#0"
+       ]
+      },
+      {
+       "read": "verticalnet#19"
+      },
+      {
+       "search": "VerticalNet amendment services warranty report breach days",
+       "results": [
+        "verticalnet#19",
+        "corio#13",
+        "verticalnet#18",
+        "bnl#16",
+        "verticalnet#34"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q18",
+     "kind": "fact",
+     "question": "Within how many days of the effective date must Commerce One sign a source code escrow agreement under the Corio agreement?",
+     "output": {
+      "found": true,
+      "answer": "Under Section 12.1 of the Corio License and Hosting Agreement, Commerce One must execute the source code escrow agreement (among Corio, Commerce One and a mutually acceptable escrow agent) within sixty (60) days of the Effective Date. My searches did not surface any amendment changing this period.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 5,
+      "context_tokens": 5130,
+      "billed_input_tokens": 11824,
+      "output_tokens": 296,
+      "latency_s": 6.3,
+      "cost_usd": 0.05024
+     },
+     "steps": [
+      {
+       "search": "Commerce One source code escrow agreement effective date days",
+       "results": [
+        "corio#17",
+        "corio#18",
+        "corio#6",
+        "corio#5",
+        "corio#24"
+       ]
+      },
+      {
+       "read": "corio#18"
+      },
+      {
+       "read": "corio#17"
+      },
+      {
+       "search": "amendment escrow agreement Commerce One Corio days Effective Date",
+       "results": [
+        "corio#17",
+        "corio#18",
+        "corio#21",
+        "corio#27",
+        "corio#13"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q19",
+     "kind": "absent",
+     "question": "Does the BNL outsourcing agreement restrict either party from soliciting the other party's employees? If so, for how long?",
+     "output": {
+      "found": false,
+      "answer": "I could not find a non-solicitation clause in the BNL Outsourcing Agreement that restricts either party from soliciting the other's employees. The BNL chunks I searched and read covered data ownership, security, backup, fees, cancellation, arbitration, assignment, attorney fees, binding effect and choice of law. None of them contained an employee non-solicitation provision or a duration for one. The only employee non-solicitation language that turned up was in the verticalnet agreement, which is a different contract. I did not read every BNL chunk, so a clause may exist that I did not reach, but I cannot confirm one from the material I read. I also found no amendment to the BNL agreement.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 5190,
+      "billed_input_tokens": 13659,
+      "output_tokens": 532,
+      "latency_s": 7.67,
+      "cost_usd": 0.05993
+     },
+     "steps": [
+      {
+       "search": "BNL outsourcing non-solicitation of employees",
+       "results": [
+        "bnl#0",
+        "bnl#6",
+        "verticalnet#27",
+        "bnl#8",
+        "bnl#3"
+       ]
+      },
+      {
+       "search": "VIP BNL solicit hire employees personnel period of months after termination",
+       "results": [
+        "bnl#15",
+        "bnl#16",
+        "bnl#14",
+        "bnl#3",
+        "bnl#6"
+       ]
+      },
+      {
+       "search": "employees solicit hire non-solicitation",
+       "results": [
+        "verticalnet#25",
+        "verticalnet#24",
+        "verticalnet#27",
+        "dynamex#8",
+        "dynamex#3"
+       ]
+      },
+      {
+       "search": "VIP BNL agree not to solicit employees of the other party",
+       "results": [
+        "bnl#8",
+        "bnl#3",
+        "bnl#6",
+        "bnl#2",
+        "verticalnet#24"
+       ]
+      },
+      {
+       "read": "bnl#17"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q20",
+     "kind": "absent",
+     "question": "Does the VerticalNet and Converge maintenance agreement require a source code escrow? If so, when must it be set up?",
+     "output": {
+      "found": false,
+      "answer": "I could not find a source code escrow requirement in the VerticalNet/Converge Maintenance and Support Agreement. The passages I read (verticalnet#27, Sections 9.4-9.7 and the start of Section 10) mention Source Code only in connection with licenses under a separate Subscription License Agreement, and say nothing about an escrow or when one must be set up. Searches for 'escrow' returned only the Corio agreement, which is a different contract. I did not find any amendment to the VerticalNet agreement. Any escrow obligation may be in the Subscription License Agreement, which is not in this document bank, or in parts of the Maintenance Agreement I did not read, so I cannot confirm either way.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 6040,
+      "billed_input_tokens": 14483,
+      "output_tokens": 569,
+      "latency_s": 9.05,
+      "cost_usd": 0.0636
+     },
+     "steps": [
+      {
+       "search": "VerticalNet Converge source code escrow",
+       "results": [
+        "corio#17",
+        "corio#18",
+        "verticalnet#13",
+        "verticalnet#8",
+        "verticalnet#27"
+       ]
+      },
+      {
+       "read": "verticalnet#27"
+      },
+      {
+       "search": "escrow source code Converge deposit Subscription License Agreement",
+       "results": [
+        "corio#17",
+        "verticalnet#13",
+        "verticalnet#8",
+        "verticalnet#27",
+        "corio#18"
+       ]
+      },
+      {
+       "search": "escrow",
+       "results": [
+        "corio#17",
+        "corio#18"
+       ]
+      },
+      {
+       "search": "verticalnet amendment source code deposit third party escrow agent",
+       "results": [
+        "corio#17",
+        "corio#18",
+        "verticalnet#13",
+        "bnl#19",
+        "corio#23"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q21",
+     "kind": "absent",
+     "question": "What insurance does the Corio and Commerce One license agreement require either party to carry?",
+     "output": {
+      "found": false,
+      "answer": "I could not find an insurance requirement in the Corio and Commerce One License and Hosting Agreement. My searches only returned insurance provisions from the Dynamex agreement (dynamex#8 and #9), which is a different contract. None of the Corio chunks I saw (corio#1, 5, 9, 15, 18, 19, 20, 21, 27) addressed insurance, and I did not find an amendment to the Corio agreement that does. I did not read the full text of every Corio chunk, so I cannot rule out that a provision exists, but I have no basis in the material to state what insurance either party must carry.",
+      "citations": []
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 4839,
+      "billed_input_tokens": 13007,
+      "output_tokens": 580,
+      "latency_s": 7.87,
+      "cost_usd": 0.0578
+     },
+     "steps": [
+      {
+       "search": "Corio insurance license agreement each party shall maintain insurance",
+       "results": [
+        "dynamex#9",
+        "dynamex#8",
+        "bnl#0",
+        "corio#1",
+        "corio#18"
+       ]
+      },
+      {
+       "search": "Corio insurance commercial general liability coverage certificate Commerce One",
+       "results": [
+        "dynamex#8",
+        "dynamex#9",
+        "corio#15",
+        "corio#27",
+        "bnl#13"
+       ]
+      },
+      {
+       "search": "Corio insurance Commerce One workers compensation policies maintain during term",
+       "results": [
+        "dynamex#9",
+        "corio#27",
+        "corio#20",
+        "corio#9",
+        "bnl#0"
+       ]
+      },
+      {
+       "search": "Corio insurance required to carry Commerce One amendment",
+       "results": [
+        "dynamex#9",
+        "corio#21",
+        "corio#5",
+        "corio#1",
+        "corio#19"
+       ]
+      },
+      {
+       "search": "insurance",
+       "results": [
+        "dynamex#9",
+        "dynamex#8",
+        "bnl#0",
+        "bnl#11",
+        "bnl#12"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q22",
+     "kind": "absent",
+     "question": "Does the PcoMed and Integra supply agreement bar either party from hiring away the other's employees? If so, for how long?",
+     "output": {
+      "found": false,
+      "answer": "I could not find a non-solicitation or no-hire provision in the PcoMed / Integra Supply Agreement (seaspine) in the material I searched. The only no-solicit language that surfaced (verticalnet#25, barring solicitation of the other party's employees and independent contractors) belongs to a different document, the VerticalNet Maintenance and Support Agreement, and does not apply to the PcoMed and Integra agreement. The seaspine chunks I read or previewed covered payments, audit, confidentiality, indemnity, and the relationship of the parties and signature page, with no employee non-solicitation clause. I also found no amendment to the seaspine agreement. I can't say whether such a restriction exists, or for how long, based on what I read.",
+      "citations": [
+       "seaspine"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 5607,
+      "billed_input_tokens": 14360,
+      "output_tokens": 751,
+      "latency_s": 9.52,
+      "cost_usd": 0.06493
+     },
+     "steps": [
+      {
+       "search": "non-solicitation employees hire supply agreement Integra",
+       "results": [
+        "seaspine#0",
+        "verticalnet#27",
+        "seaspine#20",
+        "seaspine#15",
+        "seaspine#8"
+       ]
+      },
+      {
+       "search": "solicit hire employees of other party during term and for one year after",
+       "results": [
+        "verticalnet#25",
+        "verticalnet#24",
+        "bnl#15",
+        "corio#16",
+        "seaspine#34"
+       ]
+      },
+      {
+       "search": "PcoMed Integra shall not solicit employees of the other party",
+       "results": [
+        "seaspine#29",
+        "seaspine#28",
+        "seaspine#15",
+        "verticalnet#24",
+        "verticalnet#25"
+       ]
+      },
+      {
+       "read": "seaspine#34"
+      },
+      {
+       "search": "seaspine non-solicitation personnel employ hire during term and after termination",
+       "results": [
+        "verticalnet#27",
+        "bnl#14",
+        "bnl#16",
+        "corio#16",
+        "bnl#15"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q23",
+     "kind": "cross",
+     "question": "Across the contract bank, which agreements are governed by the law of a jurisdiction outside the United States?",
+     "output": {
+      "found": true,
+      "answer": "Only one agreement is confirmed as governed by non-U.S. law: the Dynamex Marketing and Transportation Services Agreement (Purolator Courier Ltd. and Parcelway Courier Systems Canada Ltd.). Section 36.1 says it is governed by and construed under the laws of the Province of Ontario, and legal proceedings must be brought in the Ontario courts. This list may be incomplete. I did not read the governing-law clauses of the other agreements. The BNL choice-of-law clause (bnl#18) turned up in search but I did not read it. I found no governing-law text for Corio, Seaspine or VerticalNet, and I found no amendments. I can't say whether any of those four is governed by non-U.S. law.",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 5582,
+      "billed_input_tokens": 14018,
+      "output_tokens": 798,
+      "latency_s": 10.81,
+      "cost_usd": 0.06403
+     },
+     "steps": [
+      {
+       "search": "governed by laws of England Wales Ontario Germany Canada governing law",
+       "results": [
+        "dynamex#20",
+        "verticalnet#29",
+        "corio#22",
+        "seaspine#31",
+        "dynamex#16"
+       ]
+      },
+      {
+       "search": "governing law jurisdiction construed in accordance with the laws of the Province",
+       "results": [
+        "dynamex#20",
+        "seaspine#31",
+        "corio#22",
+        "seaspine#30",
+        "verticalnet#29"
+       ]
+      },
+      {
+       "search": "dynamex governing law courts of the Province attorn",
+       "results": [
+        "dynamex#20",
+        "dynamex#1",
+        "dynamex#16",
+        "corio#22",
+        "dynamex#11"
+       ]
+      },
+      {
+       "read": "dynamex#20"
+      },
+      {
+       "search": "bnl outsourcing agreement governing law jurisdiction courts",
+       "results": [
+        "bnl#0",
+        "bnl#6",
+        "corio#22",
+        "bnl#18",
+        "seaspine#31"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q24",
+     "kind": "cross",
+     "question": "Across the contract bank, which agreements state a minimum fee commitment in dollars, and what is each amount?",
+     "output": {
+      "found": true,
+      "answer": "Based on what I read, only one agreement clearly states a minimum fee commitment as a dollar amount: the VerticalNet Maintenance and Support Agreement (VerticalNet/VNE and Converge, 2001-10-09) sets an Initial Term Minimum Fee of $4,500,000, payable in 18 equal monthly installments of $250,000 (November 2001 through March 2003). Renewal-term minimum fees are not fixed; they are to be mutually agreed in writing. The BNL Outsourcing Agreement (VIP and BNL) refers to a defined 'Minimum Fee' in its cancellation-fee clause, but the dollar amount of that Minimum Fee was not in the passages I read. The only dollar figure there is a $30,000 floor on the cancellation fee, which is not the minimum fee itself. I did not find or confirm minimum fee dollar amounts in the Corio, Seaspine, or Dynamex agreements, and I did not locate any amendments, so the answer may be incomplete for those documents.",
+      "citations": [
+       "verticalnet",
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "fact_2": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 7581,
+      "billed_input_tokens": 16483,
+      "output_tokens": 811,
+      "latency_s": 8.78,
+      "cost_usd": 0.07402
+     },
+     "steps": [
+      {
+       "search": "minimum fee commitment dollars",
+       "results": [
+        "verticalnet#14",
+        "verticalnet#15",
+        "bnl#3",
+        "seaspine#9",
+        "bnl#16"
+       ]
+      },
+      {
+       "read": "bnl#16"
+      },
+      {
+       "read": "verticalnet#15"
+      },
+      {
+       "search": "BNL minimum monthly fee Schedule A VIP",
+       "results": [
+        "bnl#3",
+        "bnl#15",
+        "bnl#16",
+        "bnl#4",
+        "bnl#5"
+       ]
+      },
+      {
+       "read": "bnl#5"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "q25",
+     "kind": "cross",
+     "question": "Across the contract bank, which agreements renew automatically unless a party gives notice, and how much notice does each require?",
+     "output": {
+      "found": false,
+      "answer": "I could not find any automatic-renewal clause in the material I retrieved, so I cannot say which agreements renew automatically unless notice is given or how much notice each requires. My searches returned termination provisions (for example, VerticalNet Section 9: termination for material breach with a 30-day cure period, extendable to 60 days, and a 3 Business Day cure period for non-payment; automatic termination if the Subscription License Agreement terminates) and an Effect of Termination clause. None of these is an auto-renewal or non-renewal notice provision. I did not retrieve the term or renewal sections of the Corio, Seaspine, Dynamex, BNL or VerticalNet agreements, and I found no amendments. The answer is therefore not in the material I read, and I will not guess.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "fail",
+      "checks": {
+       "found": false,
+       "fact_1": false,
+       "fact_2": false,
+       "cites_expected": false
+      }
+     },
+     "totals": {
+      "calls": 6,
+      "context_tokens": 5345,
+      "billed_input_tokens": 13914,
+      "output_tokens": 774,
+      "latency_s": 9.52,
+      "cost_usd": 0.06337
+     },
+     "steps": [
+      {
+       "search": "automatically renew unless notice of non-renewal term",
+       "results": [
+        "corio#16",
+        "verticalnet#27",
+        "verticalnet#25",
+        "verticalnet#15",
+        "verticalnet#26"
+       ]
+      },
+      {
+       "search": "term renewal successive periods unless either party provides written notice prior to expiration",
+       "results": [
+        "corio#16",
+        "verticalnet#27",
+        "bnl#15",
+        "seaspine#13",
+        "seaspine#12"
+       ]
+      },
+      {
+       "search": "initial term shall automatically renew additional one year terms days prior written notice",
+       "results": [
+        "corio#16",
+        "bnl#15",
+        "verticalnet#25",
+        "verticalnet#27",
+        "verticalnet#24"
+       ]
+      },
+      {
+       "search": "term of agreement renewal terms non-renewal notice days before expiration",
+       "results": [
+        "verticalnet#27",
+        "corio#16",
+        "verticalnet#25",
+        "dynamex#9",
+        "verticalnet#26"
+       ]
+      },
+      {
+       "read": "verticalnet#26"
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  "study_notes": {
+   "summary": {
+    "passed": 25,
+    "total": 25,
+    "by_kind": {
+     "fact": "18/18",
+     "absent": "4/4",
+     "cross": "3/3"
+    },
+    "fabricated": 0,
+    "stale": 0,
+    "mean_context_tokens": 7479,
+    "mean_billed_input_tokens": 11971.4,
+    "mean_output_tokens": 107.6,
+    "mean_latency_s": 1.14,
+    "mean_calls": 1,
+    "total_cost_usd": 1.0035,
+    "build_tokens": 109525
+   },
+   "rows": [
+    {
+     "id": "q01",
+     "kind": "fact",
+     "question": "What law governs the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": true,
+      "answer": "California law governs, excluding its conflict-of-laws rules and the 1980 UN Convention on Contracts for the International Sale of Goods. Disputes go to binding AAA arbitration before one arbitrator in San Francisco County, with the non-prevailing party paying the AAA fees.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11965,
+      "output_tokens": 119,
+      "latency_s": 1.15,
+      "cost_usd": 0.04905
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q02",
+     "kind": "fact",
+     "question": "How long is the initial term of the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": true,
+      "answer": "The initial term is 5 years from the Effective Date of October 29, 1999. It then auto-renews for successive 1-year periods unless either party gives written notice at least 30 days before the term ends.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11961,
+      "output_tokens": 87,
+      "latency_s": 0.98,
+      "cost_usd": 0.00464
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q03",
+     "kind": "fact",
+     "question": "Under the Corio license and hosting agreement, how much notice must a party give to stop an automatic renewal?",
+     "output": {
+      "found": true,
+      "answer": "Either party may stop the automatic renewal by giving written notice at least 30 days before the end of the initial 5-year term or any 1-year renewal period.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11970,
+      "output_tokens": 73,
+      "latency_s": 0.9,
+      "cost_usd": 0.04861
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q04",
+     "kind": "fact",
+     "question": "How much written notice does either party need to give to terminate the Purolator and Dynamex transportation services agreement without cause?",
+     "output": {
+      "found": true,
+      "answer": "Either party must give 2 years' written notice to terminate the agreement without cause (s.19.1).",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11975,
+      "output_tokens": 58,
+      "latency_s": 0.83,
+      "cost_usd": 0.00437
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q05",
+     "kind": "fact",
+     "question": "Which jurisdiction's law governs the Purolator and Dynamex transportation services agreement?",
+     "output": {
+      "found": true,
+      "answer": "Ontario law governs the agreement (s.36), with the Ontario courts having jurisdiction and the parties attorning to them. Disputes go to binding arbitration in Metropolitan Toronto under the Arbitration Act (s.39).",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11966,
+      "output_tokens": 105,
+      "latency_s": 1.06,
+      "cost_usd": 0.04891
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q06",
+     "kind": "fact",
+     "question": "Under the Purolator and Dynamex agreement, what is the minimum cargo liability insurance each party must carry?",
+     "output": {
+      "found": true,
+      "answer": "Each party must carry cargo liability insurance of at least $100,000 per occurrence.",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11974,
+      "output_tokens": 55,
+      "latency_s": 0.87,
+      "cost_usd": 0.04844
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q07",
+     "kind": "fact",
+     "question": "What is the minimum monthly fee BNL pays under its outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "BNL pays a Minimum Fee of $5,000 per month under the Outsourcing Agreement with VIP, alongside the Schedule B rate of $.305 per policy per month.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11975,
+      "output_tokens": 86,
+      "latency_s": 1.18,
+      "cost_usd": 0.00464
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q08",
+     "kind": "fact",
+     "question": "Under the BNL outsourcing agreement, how much notice before the end of the initial term is needed to stop it continuing year to year?",
+     "output": {
+      "found": true,
+      "answer": "Either party must give written notice at least six (6) months before the end of the Initial Term (or the then-current Extended Term) to stop the agreement from auto-renewing year to year.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11975,
+      "output_tokens": 81,
+      "latency_s": 1.03,
+      "cost_usd": 0.04871
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q09",
+     "kind": "fact",
+     "question": "What state's law governs the BNL outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "The BNL outsourcing agreement is governed by Oklahoma law, without regard to conflict of laws rules.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11970,
+      "output_tokens": 63,
+      "latency_s": 0.94,
+      "cost_usd": 0.00442
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q10",
+     "kind": "fact",
+     "question": "What minimum fee does Converge owe for services during the initial term of the VerticalNet maintenance and support agreement?",
+     "output": {
+      "found": true,
+      "answer": "Converge owes an Initial Term Minimum Fee of $4,500,000, payable in 18 monthly instalments of $250,000 (first due at signing, then by the 1st of each month from Nov 2001 through Mar 2003); instalments are non-refundable.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11973,
+      "output_tokens": 114,
+      "latency_s": 1.11,
+      "cost_usd": 0.00492
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q11",
+     "kind": "fact",
+     "question": "When does the initial term of the VerticalNet and Converge maintenance and support agreement end?",
+     "output": {
+      "found": true,
+      "answer": "The initial term of the VerticalNet/Converge Maintenance and Support Agreement runs from the October 1, 2001 Effective Date to March 31, 2003. It continues past that date only for uncompleted Work Plan services or obligations (including payment), solely for that Work Plan.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11967,
+      "output_tokens": 120,
+      "latency_s": 1.06,
+      "cost_usd": 0.04906
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q12",
+     "kind": "fact",
+     "question": "What state's law governs the PcoMed and Integra supply agreement?",
+     "output": {
+      "found": true,
+      "answer": "The PcoMed, LLC and Integra LifeSciences Corporation supply agreement is governed by the laws of the State of New Jersey (\u00a712.3). Disputes go to 30 days of senior-officer negotiation, then binding arbitration in Denver, Colorado.",
+      "citations": [
+       "seaspine"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11959,
+      "output_tokens": 116,
+      "latency_s": 1.1,
+      "cost_usd": 0.04899
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q13",
+     "kind": "fact",
+     "question": "After the VerticalNet and Converge maintenance agreement ends, for how long does the employee non-solicitation obligation continue?",
+     "output": {
+      "found": true,
+      "answer": "The mutual employee/individual contractor non-solicitation obligation lasts for the Term plus 1 year, so it continues for 1 year after the agreement ends. Converge is released as to VNE Service Personnel upon a Vert Non-Renewal Election.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11980,
+      "output_tokens": 112,
+      "latency_s": 1.12,
+      "cost_usd": 0.04904
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q14",
+     "kind": "fact",
+     "question": "Under the Corio license agreement's audit clause, what size of underpayment makes Corio reimburse Commerce One for the cost of the audit?",
+     "output": {
+      "found": true,
+      "answer": "Corio must reimburse Commerce One for the reasonable cost of the audit if the underpayment exceeds 5%. Otherwise, Commerce One bears the audit cost.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11981,
+      "output_tokens": 83,
+      "latency_s": 0.95,
+      "cost_usd": 0.04875
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q15",
+     "kind": "fact",
+     "question": "Under the BNL outsourcing agreement, what is BNL's liability to VIP limited to?",
+     "output": {
+      "found": true,
+      "answer": "BNL's cap is the same as VIP's: the amount BNL paid for the specific service in the 12 months before the claim accrued (or the first-12-month minimum fees, i.e. $5,000/month x 12 = $60,000, if the claim accrues in the first year). Exceptions to BNL's cap are minimum and other fees under \u00b65, 15(a) and 15(c), and breach of VIP's proprietary rights; consequential, exemplary, special, indirect, incidental and punitive damages are excluded for both parties.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11969,
+      "output_tokens": 198,
+      "latency_s": 1.56,
+      "cost_usd": 0.04985
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q16",
+     "kind": "fact",
+     "question": "In the Purolator and Dynamex agreement, what per-kilogram liability limit do the parties' contracts of carriage set for loss, damage or delay?",
+     "output": {
+      "found": true,
+      "answer": "Liability for loss, damage or delay to Freight is capped at the other party's contractual liability to its own customers, which is $4.41 per kg (or $2.00 per lb), unless a higher value is declared (s.6.3).",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11985,
+      "output_tokens": 99,
+      "latency_s": 1.14,
+      "cost_usd": 0.04893
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q17",
+     "kind": "fact",
+     "question": "Under the VerticalNet maintenance agreement's services warranty, within how many days must Converge report a breach?",
+     "output": {
+      "found": true,
+      "answer": "Converge must report a breach of the services warranty in writing within 90 days of performance of the services.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11971,
+      "output_tokens": 57,
+      "latency_s": 0.92,
+      "cost_usd": 0.04845
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q18",
+     "kind": "fact",
+     "question": "Within how many days of the effective date must Commerce One sign a source code escrow agreement under the Corio agreement?",
+     "output": {
+      "found": true,
+      "answer": "The escrow agreement is due within 60 days of the Effective Date (October 29, 1999), with escrow established in California and Corio paying the costs.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11974,
+      "output_tokens": 72,
+      "latency_s": 1.06,
+      "cost_usd": 0.04861
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q19",
+     "kind": "absent",
+     "question": "Does the BNL outsourcing agreement restrict either party from soliciting the other party's employees? If so, for how long?",
+     "output": {
+      "found": false,
+      "answer": "The BNL outsourcing agreement notes do not describe any employee non-solicitation restriction on either party; they state there is no exclusivity, non-compete or non-solicitation (VIP may serve other clients with the same personnel), so no duration applies.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11972,
+      "output_tokens": 106,
+      "latency_s": 1.15,
+      "cost_usd": 0.04894
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q20",
+     "kind": "absent",
+     "question": "Does the VerticalNet and Converge maintenance agreement require a source code escrow? If so, when must it be set up?",
+     "output": {
+      "found": false,
+      "answer": "No. The VerticalNet/Converge Maintenance and Support Agreement contains no source code escrow requirement, so there is no setup deadline. Source code rights are only as provided in the separate Subscription License Agreement (SLA), and Vert has no obligation to deliver source code except as the SLA provides.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11974,
+      "output_tokens": 127,
+      "latency_s": 1.16,
+      "cost_usd": 0.04916
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q21",
+     "kind": "absent",
+     "question": "What insurance does the Corio and Commerce One license agreement require either party to carry?",
+     "output": {
+      "found": false,
+      "answer": "The Corio and Commerce One agreement does not require either party to carry any insurance; the notes for that agreement state 'Insurance: none.'",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11964,
+      "output_tokens": 70,
+      "latency_s": 1.01,
+      "cost_usd": 0.04855
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q22",
+     "kind": "absent",
+     "question": "Does the PcoMed and Integra supply agreement bar either party from hiring away the other's employees? If so, for how long?",
+     "output": {
+      "found": false,
+      "answer": "No. The PcoMed/Integra supply agreement contains no employee non-solicitation or no-hire covenant binding either party. The only employee-related term is a PcoMed representation that a named employee's (redacted) non-compete does not block his employment, so no duration applies.",
+      "citations": [
+       "seaspine"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "says_not_found": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11975,
+      "output_tokens": 113,
+      "latency_s": 1.21,
+      "cost_usd": 0.04903
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q23",
+     "kind": "cross",
+     "question": "Across the contract bank, which agreements are governed by the law of a jurisdiction outside the United States?",
+     "output": {
+      "found": true,
+      "answer": "Only one agreement is governed by non-US law: the Purolator/Parcelway (Dynamex) Marketing and Transportation Services Agreement, governed by the laws of Ontario, Canada (s.36). The others are governed by US law: corio and bnl by California and Oklahoma, seaspine by New Jersey, and verticalnet by Pennsylvania and US federal law.",
+      "citations": [
+       "dynamex",
+       "corio",
+       "seaspine",
+       "bnl",
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11968,
+      "output_tokens": 174,
+      "latency_s": 1.61,
+      "cost_usd": 0.04961
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q24",
+     "kind": "cross",
+     "question": "Across the contract bank, which agreements state a minimum fee commitment in dollars, and what is each amount?",
+     "output": {
+      "found": true,
+      "answer": "Two agreements state a dollar minimum fee: BNL (VIP/Brokers National Life) has a Minimum Fee of $5,000 per month, and VerticalNet (Converge) has an Initial Term Minimum Fee of $4,500,000, paid in 18 monthly instalments of $250,000. Others do not state a dollar minimum: Seaspine's Minimum Payments for Periods 1-7 and Corio's fees are redacted, and Dynamex has no minimum fees.",
+      "citations": [
+       "bnl",
+       "verticalnet",
+       "seaspine",
+       "corio",
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "fact_2": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11969,
+      "output_tokens": 212,
+      "latency_s": 1.68,
+      "cost_usd": 0.04999
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "q25",
+     "kind": "cross",
+     "question": "Across the contract bank, which agreements renew automatically unless a party gives notice, and how much notice does each require?",
+     "output": {
+      "found": true,
+      "answer": "Two agreements auto-renew unless a party gives notice: Corio (Corio/Commerce One) renews for successive 1-year periods unless either party gives written notice at least 30 days before the end of the initial term or any renewal year; and BNL (VIP/BNL) renews year to year unless either party gives written notice at least 6 months before the end of the Initial Term or current Extended Term (BNL owes a cancellation fee if it terminates in an Extended Term with less than 6 months' notice).",
+      "citations": [
+       "corio",
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "fact_2": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11973,
+      "output_tokens": 190,
+      "latency_s": 1.6,
+      "cost_usd": 0.04979
+     },
+     "steps": [],
+     "note": ""
+    }
+   ]
+  }
+ },
+ "part2": {
+  "long_context": {
+   "summary": {
+    "passed": 5,
+    "total": 5,
+    "by_kind": {
+     "changed": "5/5"
+    },
+    "fabricated": 0,
+    "stale": 0,
+    "mean_context_tokens": 70328,
+    "mean_billed_input_tokens": 96058.6,
+    "mean_output_tokens": 112.4,
+    "mean_latency_s": 1.19,
+    "mean_calls": 1,
+    "total_cost_usd": 1.9268,
+    "build_tokens": 0
+   },
+   "rows": [
+    {
+     "id": "c01",
+     "kind": "changed",
+     "question": "How long is the initial term of the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": true,
+      "answer": "The initial term is seven (7) years from the Effective Date (October 29, 1999). Amendment No. 1 (March 1, 2001) extended it from the original five (5) years in Section 11.1, and the agreement then renews automatically for one-year periods.",
+      "citations": [
+       "corio_amendment_1",
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 70328,
+      "billed_input_tokens": 96049,
+      "output_tokens": 117,
+      "latency_s": 1.29,
+      "cost_usd": 0.38536
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c02",
+     "kind": "changed",
+     "question": "What state's law governs the BNL outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "Texas law governs. The original agreement chose Oklahoma law, but Amendment No. 1 (January 15, 2008) replaced the governing law section with the laws of the State of Texas, without regard to conflict of laws.",
+      "citations": [
+       "bnl_amendment_1",
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 70328,
+      "billed_input_tokens": 96058,
+      "output_tokens": 109,
+      "latency_s": 1.14,
+      "cost_usd": 0.38532
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c03",
+     "kind": "changed",
+     "question": "How much written notice does either party need to give to terminate the Purolator and Dynamex transportation services agreement without cause?",
+     "output": {
+      "found": true,
+      "answer": "Either party must give twelve (12) months' written notice to terminate without cause. Amendment No. 1 (June 1, 1997) replaced the original two (2) years' notice in paragraph 19.1 with this twelve-month period.",
+      "citations": [
+       "dynamex_amendment_1",
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 70328,
+      "billed_input_tokens": 96062,
+      "output_tokens": 113,
+      "latency_s": 1.23,
+      "cost_usd": 0.38537
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c04",
+     "kind": "changed",
+     "question": "What minimum fee does Converge owe for services during the initial term of the VerticalNet maintenance and support agreement?",
+     "output": {
+      "found": true,
+      "answer": "Under Amendment No. 1 (April 1, 2002), the Initial Term Minimum Fee Converge pays to VNE is reduced from $4,500,000 to $3,750,000. The amendment controls over the original agreement's Section 4.1.",
+      "citations": [
+       "verticalnet_amendment_1",
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 70328,
+      "billed_input_tokens": 96062,
+      "output_tokens": 123,
+      "latency_s": 1.18,
+      "cost_usd": 0.38547
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c05",
+     "kind": "changed",
+     "question": "What is the minimum monthly fee BNL pays under its outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "Under the original agreement the minimum monthly fee was $5,000, but Amendment No. 1 (effective February 1, 2008) increased it to $6,500 per month, and the amendment controls.",
+      "citations": [
+       "bnl",
+       "bnl_amendment_1"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 70328,
+      "billed_input_tokens": 96062,
+      "output_tokens": 100,
+      "latency_s": 1.12,
+      "cost_usd": 0.38524
+     },
+     "steps": [],
+     "note": ""
+    }
+   ]
+  },
+  "retrieval": {
+   "summary": {
+    "passed": 5,
+    "total": 5,
+    "by_kind": {
+     "changed": "5/5"
+    },
+    "fabricated": 0,
+    "stale": 0,
+    "mean_context_tokens": 3209.8,
+    "mean_billed_input_tokens": 5833.6,
+    "mean_output_tokens": 116.6,
+    "mean_latency_s": 1.14,
+    "mean_calls": 1,
+    "total_cost_usd": 0.0217,
+    "build_tokens": 0
+   },
+   "rows": [
+    {
+     "id": "c01",
+     "kind": "changed",
+     "question": "How long is the initial term of the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": true,
+      "answer": "The initial term is seven (7) years from the Effective Date (October 29, 1999), as Amendment No. 1 (March 1, 2001) extended it from the original five (5) years. After that, the Agreement renews automatically for one-year periods.",
+      "citations": [
+       "corio_amendment_1",
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3282,
+      "billed_input_tokens": 5801,
+      "output_tokens": 113,
+      "latency_s": 1.14,
+      "cost_usd": 0.00429
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c02",
+     "kind": "changed",
+     "question": "What state's law governs the BNL outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "Texas law governs. Amendment No. 1 (January 15, 2008) deleted the original Oklahoma choice-of-law clause and replaced it with one providing that the Agreement is governed by the laws of the State of Texas without regard to conflict of laws.",
+      "citations": [
+       "bnl_amendment_1",
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3019,
+      "billed_input_tokens": 5884,
+      "output_tokens": 121,
+      "latency_s": 1.09,
+      "cost_usd": 0.00438
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c03",
+     "kind": "changed",
+     "question": "How much written notice does either party need to give to terminate the Purolator and Dynamex transportation services agreement without cause?",
+     "output": {
+      "found": true,
+      "answer": "Either party must give twelve (12) months written notice to terminate without cause. Amendment No. 1 (June 1, 1997) replaced Paragraph 19.1 of the original agreement, which had required two (2) years written notice.",
+      "citations": [
+       "dynamex_amendment_1",
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3216,
+      "billed_input_tokens": 5650,
+      "output_tokens": 112,
+      "latency_s": 1.15,
+      "cost_usd": 0.00427
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c04",
+     "kind": "changed",
+     "question": "What minimum fee does Converge owe for services during the initial term of the VerticalNet maintenance and support agreement?",
+     "output": {
+      "found": true,
+      "answer": "Under Amendment No. 1 (April 1, 2002), the Initial Term Minimum Fee is reduced from $4,500,000 to $3,750,000. The original agreement's $4,500,000 (18 monthly installments of $250,000) is superseded by the amendment.",
+      "citations": [
+       "verticalnet_amendment_1",
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3324,
+      "billed_input_tokens": 6019,
+      "output_tokens": 131,
+      "latency_s": 1.21,
+      "cost_usd": 0.0045
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c05",
+     "kind": "changed",
+     "question": "What is the minimum monthly fee BNL pays under its outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "The minimum monthly fee is $6,500 per month, effective February 1, 2008, under Amendment No. 1, which increased it from the original $5,000 per month in the 2006 Outsourcing Agreement.",
+      "citations": [
+       "bnl_amendment_1",
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3208,
+      "billed_input_tokens": 5814,
+      "output_tokens": 106,
+      "latency_s": 1.12,
+      "cost_usd": 0.00423
+     },
+     "steps": [],
+     "note": ""
+    }
+   ]
+  },
+  "agent": {
+   "summary": {
+    "passed": 5,
+    "total": 5,
+    "by_kind": {
+     "changed": "5/5"
+    },
+    "fabricated": 0,
+    "stale": 0,
+    "mean_context_tokens": 2218.2,
+    "mean_billed_input_tokens": 6990.6,
+    "mean_output_tokens": 279.2,
+    "mean_latency_s": 4.02,
+    "mean_calls": 3.4,
+    "total_cost_usd": 0.1537,
+    "build_tokens": 0
+   },
+   "rows": [
+    {
+     "id": "c01",
+     "kind": "changed",
+     "question": "How long is the initial term of the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": true,
+      "answer": "The initial term is seven (7) years from the Effective Date. Amendment No. 1 (March 1, 2001) changed Section 11.1 of the original License and Hosting Agreement (October 29, 1999) from five (5) years to seven (7) years, and the amendment controls. After the initial term, the agreement renews automatically for one-year periods on the same notice terms as before. I relied on the amendment's description of the original five-year term and did not open Section 11.1 of the original agreement.",
+      "citations": [
+       "corio_amendment_1",
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 3,
+      "context_tokens": 1616,
+      "billed_input_tokens": 5556,
+      "output_tokens": 308,
+      "latency_s": 4.42,
+      "cost_usd": 0.02529
+     },
+     "steps": [
+      {
+       "search": "Corio initial term license and hosting agreement",
+       "results": [
+        "corio_amendment_1#0",
+        "corio#0",
+        "corio#3",
+        "verticalnet#14",
+        "corio#24"
+       ]
+      },
+      {
+       "read": "corio_amendment_1#0"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "c02",
+     "kind": "changed",
+     "question": "What state's law governs the BNL outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "Texas. The original BNL Outsourcing Agreement (effective May 1, 2006) was governed by Oklahoma law, but Amendment No. 1 (January 15, 2008) deleted and replaced the governing law section so that the Agreement and performance are governed by the laws of the State of Texas, without regard to conflict of laws. The amendment controls over the original contract.",
+      "citations": [
+       "bnl_amendment_1",
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 5,
+      "context_tokens": 4559,
+      "billed_input_tokens": 12400,
+      "output_tokens": 306,
+      "latency_s": 5.09,
+      "cost_usd": 0.05264
+     },
+     "steps": [
+      {
+       "search": "BNL governing law Virtual Item Processing Systems",
+       "results": [
+        "bnl_amendment_1#0",
+        "bnl#0",
+        "bnl#20",
+        "bnl#14",
+        "bnl#21"
+       ]
+      },
+      {
+       "search": "governed by laws of State of governing law",
+       "results": [
+        "bnl_amendment_1#0",
+        "seaspine#31",
+        "corio#22",
+        "dynamex#20",
+        "bnl#18"
+       ]
+      },
+      {
+       "read": "bnl#18"
+      },
+      {
+       "read": "bnl_amendment_1#0"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "c03",
+     "kind": "changed",
+     "question": "How much written notice does either party need to give to terminate the Purolator and Dynamex transportation services agreement without cause?",
+     "output": {
+      "found": true,
+      "answer": "Either party must give twelve (12) months' written notice to terminate without cause. Amendment No. 1 (June 1, 1997) deleted and replaced Paragraph 19.1 of the original Agreement with this term, and the amendment controls over the original agreement.",
+      "citations": [
+       "dynamex_amendment_1",
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 3,
+      "context_tokens": 1639,
+      "billed_input_tokens": 5634,
+      "output_tokens": 193,
+      "latency_s": 2.97,
+      "cost_usd": 0.02445
+     },
+     "steps": [
+      {
+       "search": "terminate without cause written notice days Dynamex Purolator",
+       "results": [
+        "dynamex#15",
+        "dynamex_amendment_1#0",
+        "dynamex#1",
+        "dynamex#0",
+        "dynamex#4"
+       ]
+      },
+      {
+       "read": "dynamex_amendment_1#0"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "c04",
+     "kind": "changed",
+     "question": "What minimum fee does Converge owe for services during the initial term of the VerticalNet maintenance and support agreement?",
+     "output": {
+      "found": true,
+      "answer": "Converge owes an Initial Term Minimum Fee of $3,750,000 for VNE's provision of the Services during the Initial Term. The original Maintenance and Support Agreement set this fee at $4,500,000, but Amendment No. 1 (dated April 1, 2002) reduced it to $3,750,000. The amendment controls over the original agreement.",
+      "citations": [
+       "verticalnet_amendment_1",
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 3,
+      "context_tokens": 1642,
+      "billed_input_tokens": 5642,
+      "output_tokens": 233,
+      "latency_s": 3.45,
+      "cost_usd": 0.02489
+     },
+     "steps": [
+      {
+       "search": "VerticalNet minimum fee initial term maintenance and support Converge",
+       "results": [
+        "verticalnet_amendment_1#0",
+        "verticalnet#15",
+        "verticalnet#14",
+        "verticalnet#3",
+        "verticalnet#0"
+       ]
+      },
+      {
+       "read": "verticalnet_amendment_1#0"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "id": "c05",
+     "kind": "changed",
+     "question": "What is the minimum monthly fee BNL pays under its outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "Under Amendment No. 1 (dated January 15, 2008), BNL's minimum monthly fee to Virtual Item Processing Systems is $6,500 per month, effective February 1, 2008. The amendment raised it from $5,000 per month, which was the figure in the original Outsourcing Agreement effective May 1, 2006. Because the amendment controls over the original agreement, $6,500 is the current minimum. The amendment's own header says it is an illustrative document written for an evaluation, not a real filing.",
+      "citations": [
+       "bnl_amendment_1",
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 3,
+      "context_tokens": 1635,
+      "billed_input_tokens": 5721,
+      "output_tokens": 356,
+      "latency_s": 4.18,
+      "cost_usd": 0.02643
+     },
+     "steps": [
+      {
+       "search": "BNL minimum monthly fee Virtual Item Processing Systems",
+       "results": [
+        "bnl_amendment_1#0",
+        "bnl#0",
+        "bnl#20",
+        "bnl#16",
+        "bnl#21"
+       ]
+      },
+      {
+       "read": "bnl_amendment_1#0"
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  "notes_stale": {
+   "summary": {
+    "passed": 0,
+    "total": 5,
+    "by_kind": {
+     "changed": "0/5"
+    },
+    "fabricated": 0,
+    "stale": 5,
+    "mean_context_tokens": 7479,
+    "mean_billed_input_tokens": 11970.8,
+    "mean_output_tokens": 81.6,
+    "mean_latency_s": 1.01,
+    "mean_calls": 1,
+    "total_cost_usd": 0.023,
+    "build_tokens": 0
+   },
+   "rows": [
+    {
+     "id": "c01",
+     "kind": "changed",
+     "question": "How long is the initial term of the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": true,
+      "answer": "The initial term is 5 years from the Effective Date of October 29, 1999. It then auto-renews for successive 1-year periods unless either party gives written notice at least 30 days before the term ends.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "stale",
+      "checks": {
+       "found": true,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11961,
+      "output_tokens": 87,
+      "latency_s": 0.98,
+      "cost_usd": 0.00464
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c02",
+     "kind": "changed",
+     "question": "What state's law governs the BNL outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "The BNL outsourcing agreement is governed by Oklahoma law, without regard to conflict of laws rules.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "stale",
+      "checks": {
+       "found": true,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11970,
+      "output_tokens": 63,
+      "latency_s": 0.94,
+      "cost_usd": 0.00442
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c03",
+     "kind": "changed",
+     "question": "How much written notice does either party need to give to terminate the Purolator and Dynamex transportation services agreement without cause?",
+     "output": {
+      "found": true,
+      "answer": "Either party must give 2 years' written notice to terminate the agreement without cause (s.19.1).",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "stale",
+      "checks": {
+       "found": true,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11975,
+      "output_tokens": 58,
+      "latency_s": 0.83,
+      "cost_usd": 0.00437
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c04",
+     "kind": "changed",
+     "question": "What minimum fee does Converge owe for services during the initial term of the VerticalNet maintenance and support agreement?",
+     "output": {
+      "found": true,
+      "answer": "Converge owes an Initial Term Minimum Fee of $4,500,000, payable in 18 monthly instalments of $250,000 (first due at signing, then by the 1st of each month from Nov 2001 through Mar 2003); instalments are non-refundable.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "stale",
+      "checks": {
+       "found": true,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11973,
+      "output_tokens": 114,
+      "latency_s": 1.11,
+      "cost_usd": 0.00492
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c05",
+     "kind": "changed",
+     "question": "What is the minimum monthly fee BNL pays under its outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "BNL pays a Minimum Fee of $5,000 per month under the Outsourcing Agreement with VIP, alongside the Schedule B rate of $.305 per policy per month.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": false,
+      "label": "stale",
+      "checks": {
+       "found": true,
+       "fact_1": false,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 7479,
+      "billed_input_tokens": 11975,
+      "output_tokens": 86,
+      "latency_s": 1.18,
+      "cost_usd": 0.00464
+     },
+     "steps": [],
+     "note": ""
+    }
+   ]
+  },
+  "notes_guarded": {
+   "summary": {
+    "passed": 5,
+    "total": 5,
+    "by_kind": {
+     "changed": "5/5"
+    },
+    "fabricated": 0,
+    "stale": 0,
+    "mean_context_tokens": 3209.8,
+    "mean_billed_input_tokens": 5833.6,
+    "mean_output_tokens": 116.6,
+    "mean_latency_s": 1.14,
+    "mean_calls": 1,
+    "total_cost_usd": 0.0217,
+    "build_tokens": 0
+   },
+   "rows": [
+    {
+     "id": "c01",
+     "kind": "changed",
+     "question": "How long is the initial term of the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": true,
+      "answer": "The initial term is seven (7) years from the Effective Date (October 29, 1999), as Amendment No. 1 (March 1, 2001) extended it from the original five (5) years. After that, the Agreement renews automatically for one-year periods.",
+      "citations": [
+       "corio_amendment_1",
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3282,
+      "billed_input_tokens": 5801,
+      "output_tokens": 113,
+      "latency_s": 1.14,
+      "cost_usd": 0.00429
+     },
+     "steps": [],
+     "note": "fallback: memory stale for corio"
+    },
+    {
+     "id": "c02",
+     "kind": "changed",
+     "question": "What state's law governs the BNL outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "Texas law governs. Amendment No. 1 (January 15, 2008) deleted the original Oklahoma choice-of-law clause and replaced it with one providing that the Agreement is governed by the laws of the State of Texas without regard to conflict of laws.",
+      "citations": [
+       "bnl_amendment_1",
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3019,
+      "billed_input_tokens": 5884,
+      "output_tokens": 121,
+      "latency_s": 1.09,
+      "cost_usd": 0.00438
+     },
+     "steps": [],
+     "note": "fallback: memory stale for bnl"
+    },
+    {
+     "id": "c03",
+     "kind": "changed",
+     "question": "How much written notice does either party need to give to terminate the Purolator and Dynamex transportation services agreement without cause?",
+     "output": {
+      "found": true,
+      "answer": "Either party must give twelve (12) months written notice to terminate without cause. Amendment No. 1 (June 1, 1997) replaced Paragraph 19.1 of the original agreement, which had required two (2) years written notice.",
+      "citations": [
+       "dynamex_amendment_1",
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3216,
+      "billed_input_tokens": 5650,
+      "output_tokens": 112,
+      "latency_s": 1.15,
+      "cost_usd": 0.00427
+     },
+     "steps": [],
+     "note": "fallback: memory stale for dynamex"
+    },
+    {
+     "id": "c04",
+     "kind": "changed",
+     "question": "What minimum fee does Converge owe for services during the initial term of the VerticalNet maintenance and support agreement?",
+     "output": {
+      "found": true,
+      "answer": "Under Amendment No. 1 (April 1, 2002), the Initial Term Minimum Fee is reduced from $4,500,000 to $3,750,000. The original agreement's $4,500,000 (18 monthly installments of $250,000) is superseded by the amendment.",
+      "citations": [
+       "verticalnet_amendment_1",
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3324,
+      "billed_input_tokens": 6019,
+      "output_tokens": 131,
+      "latency_s": 1.21,
+      "cost_usd": 0.0045
+     },
+     "steps": [],
+     "note": "fallback: memory stale for verticalnet"
+    },
+    {
+     "id": "c05",
+     "kind": "changed",
+     "question": "What is the minimum monthly fee BNL pays under its outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "The minimum monthly fee is $6,500 per month, effective February 1, 2008, under Amendment No. 1, which increased it from the original $5,000 per month in the 2006 Outsourcing Agreement.",
+      "citations": [
+       "bnl_amendment_1",
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 3208,
+      "billed_input_tokens": 5814,
+      "output_tokens": 106,
+      "latency_s": 1.12,
+      "cost_usd": 0.00423
+     },
+     "steps": [],
+     "note": "fallback: memory stale for bnl"
+    }
+   ]
+  },
+  "notes_rebuilt": {
+   "summary": {
+    "passed": 5,
+    "total": 5,
+    "by_kind": {
+     "changed": "5/5"
+    },
+    "fabricated": 0,
+    "stale": 0,
+    "mean_context_tokens": 6850,
+    "mean_billed_input_tokens": 11224,
+    "mean_output_tokens": 106.6,
+    "mean_latency_s": 1.13,
+    "mean_calls": 1,
+    "total_cost_usd": 0.2298,
+    "build_tokens": 83948
+   },
+   "rows": [
+    {
+     "id": "c01",
+     "kind": "changed",
+     "question": "How long is the initial term of the Corio and Commerce One license and hosting agreement?",
+     "output": {
+      "found": true,
+      "answer": "Amendment No. 1 (March 1, 2001) extends the initial term to 7 years from the Effective Date of October 29, 1999 (original term: 5 years), so it runs to about October 29, 2006. The amendment controls over the original.",
+      "citations": [
+       "corio"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 6850,
+      "billed_input_tokens": 11214,
+      "output_tokens": 103,
+      "latency_s": 1.04,
+      "cost_usd": 0.04588
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c02",
+     "kind": "changed",
+     "question": "What state's law governs the BNL outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "Texas law governs the BNL outsourcing agreement, as changed by Amendment No. 1 (the original agreement specified Oklahoma law); the choice of law applies without regard to conflict of laws principles.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 6850,
+      "billed_input_tokens": 11219,
+      "output_tokens": 94,
+      "latency_s": 1.09,
+      "cost_usd": 0.04581
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c03",
+     "kind": "changed",
+     "question": "How much written notice does either party need to give to terminate the Purolator and Dynamex transportation services agreement without cause?",
+     "output": {
+      "found": true,
+      "answer": "Either party must give twelve (12) months' written notice to terminate without cause. Amendment No. 1 replaces section 19.1 and supersedes the original two (2) year notice period.",
+      "citations": [
+       "dynamex"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 6850,
+      "billed_input_tokens": 11228,
+      "output_tokens": 85,
+      "latency_s": 0.96,
+      "cost_usd": 0.04576
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c04",
+     "kind": "changed",
+     "question": "What minimum fee does Converge owe for services during the initial term of the VerticalNet maintenance and support agreement?",
+     "output": {
+      "found": true,
+      "answer": "Amendment No. 1 (Apr 1, 2002) reduces the Initial Term Minimum Fee from $4,500,000 to $3,750,000, and the amendment controls. However, it did not change the installments (18 equal monthly installments of $250,000, which total $4,500,000), so the amended total conflicts with the installment schedule and should be flagged for a lawyer.",
+      "citations": [
+       "verticalnet"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 6850,
+      "billed_input_tokens": 11227,
+      "output_tokens": 151,
+      "latency_s": 1.4,
+      "cost_usd": 0.04641
+     },
+     "steps": [],
+     "note": ""
+    },
+    {
+     "id": "c05",
+     "kind": "changed",
+     "question": "What is the minimum monthly fee BNL pays under its outsourcing agreement with Virtual Item Processing Systems?",
+     "output": {
+      "found": true,
+      "answer": "BNL's minimum monthly fee was raised from $5,000 to $6,500 by Amendment No. 1 (dated January 15, 2008), effective February 1, 2008. The amended figure of $6,500 per month controls.",
+      "citations": [
+       "bnl"
+      ]
+     },
+     "grade": {
+      "pass": true,
+      "label": "pass",
+      "checks": {
+       "found": true,
+       "fact_1": true,
+       "cites_expected": true
+      }
+     },
+     "totals": {
+      "calls": 1,
+      "context_tokens": 6850,
+      "billed_input_tokens": 11232,
+      "output_tokens": 100,
+      "latency_s": 1.15,
+      "cost_usd": 0.04592
+     },
+     "steps": [],
+     "note": ""
+    }
+   ]
+  }
+ },
+ "staleness": {
+  "stale_after_amendments": [
+   "corio",
+   "dynamex",
+   "bnl",
+   "verticalnet"
+  ],
+  "rebuilt": [
+   "corio",
+   "dynamex",
+   "bnl",
+   "verticalnet"
+  ],
+  "stale_after_rebuild": [],
+  "rebuild_tokens": 83948,
+  "full_build_tokens": 109525
+ }
+}
