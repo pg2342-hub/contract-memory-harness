@@ -1,0 +1,378 @@
+[
+ {
+  "id": "q01",
+  "kind": "fact",
+  "question": "What law governs the Corio and Commerce One license and hosting agreement?",
+  "docs": [
+   "corio"
+  ],
+  "must": [
+   [
+    "california"
+   ]
+  ]
+ },
+ {
+  "id": "q02",
+  "kind": "fact",
+  "question": "How long is the initial term of the Corio and Commerce One license and hosting agreement?",
+  "docs": [
+   "corio"
+  ],
+  "must": [
+   [
+    "five (5) years",
+    "5 years",
+    "five years",
+    "five-year",
+    "5-year"
+   ]
+  ]
+ },
+ {
+  "id": "q03",
+  "kind": "fact",
+  "question": "Under the Corio license and hosting agreement, how much notice must a party give to stop an automatic renewal?",
+  "docs": [
+   "corio"
+  ],
+  "must": [
+   [
+    "thirty (30) days",
+    "30 days",
+    "thirty days"
+   ]
+  ]
+ },
+ {
+  "id": "q04",
+  "kind": "fact",
+  "question": "How much written notice does either party need to give to terminate the Purolator and Dynamex transportation services agreement without cause?",
+  "docs": [
+   "dynamex"
+  ],
+  "must": [
+   [
+    "two (2) years",
+    "2 years",
+    "two years",
+    "two-year",
+    "24 months"
+   ]
+  ]
+ },
+ {
+  "id": "q05",
+  "kind": "fact",
+  "question": "Which jurisdiction's law governs the Purolator and Dynamex transportation services agreement?",
+  "docs": [
+   "dynamex"
+  ],
+  "must": [
+   [
+    "ontario"
+   ]
+  ]
+ },
+ {
+  "id": "q06",
+  "kind": "fact",
+  "question": "Under the Purolator and Dynamex agreement, what is the minimum cargo liability insurance each party must carry?",
+  "docs": [
+   "dynamex"
+  ],
+  "must": [
+   [
+    "100,000",
+    "100000",
+    "one hundred thousand"
+   ]
+  ]
+ },
+ {
+  "id": "q07",
+  "kind": "fact",
+  "question": "What is the minimum monthly fee BNL pays under its outsourcing agreement with Virtual Item Processing Systems?",
+  "docs": [
+   "bnl"
+  ],
+  "must": [
+   [
+    "5,000",
+    "5000",
+    "five thousand"
+   ]
+  ]
+ },
+ {
+  "id": "q08",
+  "kind": "fact",
+  "question": "Under the BNL outsourcing agreement, how much notice before the end of the initial term is needed to stop it continuing year to year?",
+  "docs": [
+   "bnl"
+  ],
+  "must": [
+   [
+    "six (6) months",
+    "6 months",
+    "six months"
+   ]
+  ]
+ },
+ {
+  "id": "q09",
+  "kind": "fact",
+  "question": "What state's law governs the BNL outsourcing agreement with Virtual Item Processing Systems?",
+  "docs": [
+   "bnl"
+  ],
+  "must": [
+   [
+    "oklahoma"
+   ]
+  ]
+ },
+ {
+  "id": "q10",
+  "kind": "fact",
+  "question": "What minimum fee does Converge owe for services during the initial term of the VerticalNet maintenance and support agreement?",
+  "docs": [
+   "verticalnet"
+  ],
+  "must": [
+   [
+    "4,500,000",
+    "4500000",
+    "4.5 million",
+    "four and one-half million"
+   ]
+  ]
+ },
+ {
+  "id": "q11",
+  "kind": "fact",
+  "question": "When does the initial term of the VerticalNet and Converge maintenance and support agreement end?",
+  "docs": [
+   "verticalnet"
+  ],
+  "must": [
+   [
+    "march 31, 2003",
+    "march 31 2003",
+    "2003-03-31"
+   ]
+  ]
+ },
+ {
+  "id": "q12",
+  "kind": "fact",
+  "question": "What state's law governs the PcoMed and Integra supply agreement?",
+  "docs": [
+   "seaspine"
+  ],
+  "must": [
+   [
+    "new jersey"
+   ]
+  ]
+ },
+ {
+  "id": "q13",
+  "kind": "fact",
+  "question": "After the VerticalNet and Converge maintenance agreement ends, for how long does the employee non-solicitation obligation continue?",
+  "docs": [
+   "verticalnet"
+  ],
+  "must": [
+   [
+    "one year",
+    "1 year",
+    "one (1) year",
+    "12 months",
+    "twelve months"
+   ]
+  ]
+ },
+ {
+  "id": "q14",
+  "kind": "fact",
+  "question": "Under the Corio license agreement's audit clause, what size of underpayment makes Corio reimburse Commerce One for the cost of the audit?",
+  "docs": [
+   "corio"
+  ],
+  "must": [
+   [
+    "five percent",
+    "5%",
+    "5 percent"
+   ]
+  ]
+ },
+ {
+  "id": "q15",
+  "kind": "fact",
+  "question": "Under the BNL outsourcing agreement, what is BNL's liability to VIP limited to?",
+  "docs": [
+   "bnl"
+  ],
+  "must": [
+   [
+    "twelve (12) month",
+    "12 month",
+    "twelve month",
+    "12-month",
+    "twelve-month"
+   ]
+  ]
+ },
+ {
+  "id": "q16",
+  "kind": "fact",
+  "question": "In the Purolator and Dynamex agreement, what per-kilogram liability limit do the parties' contracts of carriage set for loss, damage or delay?",
+  "docs": [
+   "dynamex"
+  ],
+  "must": [
+   [
+    "4.41"
+   ]
+  ]
+ },
+ {
+  "id": "q17",
+  "kind": "fact",
+  "question": "Under the VerticalNet maintenance agreement's services warranty, within how many days must Converge report a breach?",
+  "docs": [
+   "verticalnet"
+  ],
+  "must": [
+   [
+    "90 days",
+    "ninety (90) days",
+    "ninety days"
+   ]
+  ]
+ },
+ {
+  "id": "q18",
+  "kind": "fact",
+  "question": "Within how many days of the effective date must Commerce One sign a source code escrow agreement under the Corio agreement?",
+  "docs": [
+   "corio"
+  ],
+  "must": [
+   [
+    "sixty (60) days",
+    "60 days",
+    "sixty days"
+   ]
+  ]
+ },
+ {
+  "id": "q19",
+  "kind": "absent",
+  "question": "Does the BNL outsourcing agreement restrict either party from soliciting the other party's employees? If so, for how long?",
+  "docs": [
+   "bnl"
+  ],
+  "must": []
+ },
+ {
+  "id": "q20",
+  "kind": "absent",
+  "question": "Does the VerticalNet and Converge maintenance agreement require a source code escrow? If so, when must it be set up?",
+  "docs": [
+   "verticalnet"
+  ],
+  "must": []
+ },
+ {
+  "id": "q21",
+  "kind": "absent",
+  "question": "What insurance does the Corio and Commerce One license agreement require either party to carry?",
+  "docs": [
+   "corio"
+  ],
+  "must": []
+ },
+ {
+  "id": "q22",
+  "kind": "absent",
+  "question": "Does the PcoMed and Integra supply agreement bar either party from hiring away the other's employees? If so, for how long?",
+  "docs": [
+   "seaspine"
+  ],
+  "must": []
+ },
+ {
+  "id": "q23",
+  "kind": "cross",
+  "question": "Across the contract bank, which agreements are governed by the law of a jurisdiction outside the United States?",
+  "docs": [
+   "dynamex"
+  ],
+  "must": [
+   [
+    "ontario"
+   ]
+  ],
+  "wrong_docs": [
+   "corio",
+   "seaspine",
+   "bnl",
+   "verticalnet"
+  ]
+ },
+ {
+  "id": "q24",
+  "kind": "cross",
+  "question": "Across the contract bank, which agreements state a minimum fee commitment in dollars, and what is each amount?",
+  "docs": [
+   "bnl",
+   "verticalnet"
+  ],
+  "must": [
+   [
+    "5,000",
+    "5000",
+    "five thousand"
+   ],
+   [
+    "4,500,000",
+    "4500000",
+    "4.5 million",
+    "four and one-half million"
+   ]
+  ],
+  "wrong_docs": [
+   "corio",
+   "dynamex"
+  ]
+ },
+ {
+  "id": "q25",
+  "kind": "cross",
+  "question": "Across the contract bank, which agreements renew automatically unless a party gives notice, and how much notice does each require?",
+  "docs": [
+   "corio",
+   "bnl"
+  ],
+  "must": [
+   [
+    "thirty (30) days",
+    "30 days",
+    "thirty days"
+   ],
+   [
+    "six (6) months",
+    "6 months",
+    "six months"
+   ]
+  ],
+  "wrong_docs": [
+   "seaspine",
+   "dynamex",
+   "verticalnet"
+  ]
+ }
+]

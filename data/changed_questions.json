@@ -1,0 +1,109 @@
+[
+ {
+  "id": "c01",
+  "kind": "changed",
+  "question": "How long is the initial term of the Corio and Commerce One license and hosting agreement?",
+  "docs": [
+   "corio"
+  ],
+  "must": [
+   [
+    "seven (7) years",
+    "7 years",
+    "seven years",
+    "seven-year",
+    "7-year"
+   ]
+  ],
+  "old": [
+   "five (5) years",
+   "5 years",
+   "five years",
+   "five-year",
+   "5-year"
+  ]
+ },
+ {
+  "id": "c02",
+  "kind": "changed",
+  "question": "What state's law governs the BNL outsourcing agreement with Virtual Item Processing Systems?",
+  "docs": [
+   "bnl"
+  ],
+  "must": [
+   [
+    "texas"
+   ]
+  ],
+  "old": [
+   "oklahoma"
+  ]
+ },
+ {
+  "id": "c03",
+  "kind": "changed",
+  "question": "How much written notice does either party need to give to terminate the Purolator and Dynamex transportation services agreement without cause?",
+  "docs": [
+   "dynamex"
+  ],
+  "must": [
+   [
+    "twelve (12) months",
+    "12 months",
+    "twelve months",
+    "one year",
+    "1 year",
+    "12-month",
+    "twelve-month"
+   ]
+  ],
+  "old": [
+   "two (2) years",
+   "2 years",
+   "two years",
+   "24 months"
+  ]
+ },
+ {
+  "id": "c04",
+  "kind": "changed",
+  "question": "What minimum fee does Converge owe for services during the initial term of the VerticalNet maintenance and support agreement?",
+  "docs": [
+   "verticalnet"
+  ],
+  "must": [
+   [
+    "3,750,000",
+    "3750000",
+    "3.75 million",
+    "three million seven hundred fifty thousand"
+   ]
+  ],
+  "old": [
+   "4,500,000",
+   "4500000",
+   "4.5 million",
+   "four and one-half million"
+  ]
+ },
+ {
+  "id": "c05",
+  "kind": "changed",
+  "question": "What is the minimum monthly fee BNL pays under its outsourcing agreement with Virtual Item Processing Systems?",
+  "docs": [
+   "bnl"
+  ],
+  "must": [
+   [
+    "6,500",
+    "6500",
+    "six thousand five hundred"
+   ]
+  ],
+  "old": [
+   "5,000",
+   "5000",
+   "five thousand"
+  ]
+ }
+]
