@@ -140,7 +140,7 @@ precision.</p>
 note-writing prompt no longer lists the clause types the questions ask about (it now asks generically for the terms a
 lawyer would be likely to ask about), and the grader now matches whole figures. The numbers below are
 from a fresh live run with both changes in place; it is a single run, so a one-question difference is within run-to-run noise. The grades shown are the recorded
-answers re-graded with the final grader; how the run was graded live is in <code>runs/latest/results_as_recorded.json</code>.</p>
+answers re-graded with the final grader, which changes only q15 (fail to pass in long context, retrieval and the memory); the scores the live run reported are in <code>runs/latest/results_as_recorded.json</code>.</p>
 {summary_table(p1, o1)}
 {shows}
 <p class=muted>Context tokens are counted by the harness (about 4 characters per token) for what each config puts in

@@ -45,10 +45,12 @@ Changes since the first published run (kept in `runs/v1_topic_list_notes`; repla
 - The first rubric penalized cross-contract answers for citing contracts they had checked and ruled out, which failed
   four correct answers. That check was removed, so cross-contract answers are graded on recall only, not precision.
 
-`runs/latest/results_as_recorded.json` is how the live run was graded at the time, by an interim grader that also
-required a word boundary after a figure, so "twelve (12) month" failed to match "twelve (12) months" (q15).
-`results.json` is the same recorded answers re-graded with the fixed grader: long context and the memory go from 24
-to 25, and retrieval from 18 to 19.
+`runs/latest/results_as_recorded.json` keeps the scores the live run reported (long context 24, retrieval 18, agent
+19, memory 24), from an interim grader that also required a word boundary after a figure, so "twelve (12) month"
+failed to match "twelve (12) months" (q15). It was written by an earlier replay that reused the last recording when two
+configs send the same prompt, so ten of its rows show the other config's recorded answer; every grade is the same
+either way. `results.json` is the recorded answers re-graded with the fixed grader. Only q15 changes, from fail to pass
+in long context, retrieval and the memory, and no answer goes from pass to fail.
 
 ## Run it
 
