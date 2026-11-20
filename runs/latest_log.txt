@@ -1,9 +1,9 @@
 building study notes on the original bank ...
 part 1: 25 questions, original bank
-  long_context   23/25 pass
+  long_context   24/25 pass
   retrieval      18/25 pass
   agent          19/25 pass
-  study_notes    23/25 pass
+  study_notes    24/25 pass
 part 2: amendments added, 5 changed questions
   long_context   5/5 pass
   retrieval      5/5 pass
@@ -11,4 +11,4 @@ part 2: amendments added, 5 changed questions
   notes_stale    0/5 pass
   notes_guarded  5/5 pass
   notes_rebuilt  5/5 pass
-wrote runs/latest/results.json
+wrote runs/v2/results.json

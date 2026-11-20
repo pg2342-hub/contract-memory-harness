@@ -124,19 +124,27 @@ class Recorder(ModelClient):
 
 class Replay(ModelClient):
     def __init__(self, paths: list[Path]):
-        self.calls: dict[str, dict] = {}
+        # A prompt can be sent more than once in a run (for example the guard's fallback sends the same
+        # retrieval prompt as the retrieval config). Keep every recording and hand them out in order.
+        self.calls: dict[str, list[dict]] = {}
+        self.used: dict[str, int] = {}
         for p in paths:
             for line in Path(p).read_text().splitlines():
                 if line.strip():
                     rec = json.loads(line)
-                    self.calls[rec["key"]] = rec
+                    self.calls.setdefault(rec["key"], []).append(rec)
+        self.lock = threading.Lock()
         self.name = "replay"
 
     def complete(self, system: str, prompt: str) -> Reply:
         k = call_key(system, prompt)
         if k not in self.calls:
             raise KeyError(f"no recorded call for key {k}")
-        c = self.calls[k]
+        with self.lock:
+            i = self.used.get(k, 0)
+            self.used[k] = i + 1
+        recs = self.calls[k]
+        c = recs[min(i, len(recs) - 1)]
         self.name = f"replay:{c.get('model', '?')}"
         return Reply(c["text"], c["input_tokens"], c["output_tokens"], c["cache_read_tokens"],
                      c["cache_write_tokens"], c["latency_s"], c.get("cost_usd", 0.0), c.get("meta", {}))

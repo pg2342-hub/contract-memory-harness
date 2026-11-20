@@ -16,7 +16,7 @@ from cmh.models import Scripted
 def fake_answer(system, prompt):
     """A crude fake model: notes requests get a fixed note; questions get an answer built from the
     first sentence of the context that shares the most words with the question."""
-    if "Write notes" in prompt:
+    if "reference notes" in prompt:
         doc = re.search(r"DOCUMENT (\w+)", prompt).group(1)
         return f"Governing law: see {doc}"
     if "action" in prompt and "Turn 1 of" in prompt:
@@ -73,6 +73,15 @@ class GradeTests(unittest.TestCase):
     def test_numbers_normalize(self):
         q = {"id": "q10", "kind": "fact", "docs": ["verticalnet"], "must": [["4,500,000"]]}
         self.assertTrue(grade(q, {"found": True, "answer": "$4500000", "citations": ["verticalnet#3"]})["pass"])
+
+    def test_no_substring_matches(self):
+        q = {"id": "q24", "kind": "cross", "docs": ["bnl", "verticalnet"], "must": [["5,000"], ["4,500,000"]]}
+        out = {"found": True, "answer": "VerticalNet: $4,500,000. BNL's fee is not in what I read.", "citations": ["bnl", "verticalnet"]}
+        self.assertFalse(grade(q, out)["pass"])
+
+    def test_number_in_parentheses(self):
+        q = {"id": "q15", "kind": "fact", "docs": ["bnl"], "must": [["twelve (12) month", "12 month", "twelve month"]]}
+        self.assertTrue(grade(q, {"found": True, "answer": "Fees paid in the prior twelve (12) months.", "citations": ["bnl"]})["pass"])
 
     def test_cross_question(self):
         q = {"id": "q23", "kind": "cross", "docs": ["dynamex"], "must": [["ontario"]], "wrong_docs": ["corio"]}

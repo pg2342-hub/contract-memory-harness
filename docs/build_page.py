@@ -105,6 +105,20 @@ def build(run_dir: Path) -> str:
         f"<div class=tile><b>{p2.get('notes_stale', {}).get('summary', {}).get('stale', '-')}/5</b>answers went stale after amendments until the memory was rebuilt</div></div>")
     model = html.escape(R.get("model", ""))
     rebuilt = ", ".join(st.get("rebuilt", [])) or "-"
+    def fails(c):
+        return [r for r in p1.get(c, {}).get("rows", []) if not r["grade"]["pass"]]
+    def ids(c):
+        return ", ".join(r["id"] for r in fails(c)) or "none"
+    def said_absent(c):
+        f = [r for r in fails(c) if r["kind"] == "fact"]
+        return len(f), sum(1 for r in f if r["output"].get("found") is False)
+    rf, ra = said_absent("retrieval")
+    af, aa = said_absent("agent")
+    shows = (f"<p><b>What it shows.</b> The precomputed memory scored {nt.get('passed', '-')}/25 against long context's "
+             f"{lc.get('passed', '-')}/25 (misses: memory {ids('study_notes')}; long context {ids('long_context')}) with about "
+             f"1/{ratio:.0f} of the context per question, after a one-time offline build of {nt.get('build_tokens', 0):,} tokens. "
+             f"Retrieval and the tool agent used the least context per question but missed {rf} and {af} single facts; "
+             f"{ra} and {aa} of those misses said the term was not in what they found, and no config made up a term.</p>")
     body = f"""
 <h1>Contract memory harness</h1>
 <p>A small agent harness and eval for one question: when an agent works over a firm's contract bank, does a memory
@@ -118,14 +132,17 @@ re-checked with <code>python -m cmh.run --replay runs/latest</code> and no API k
 <h2>1. Answer quality and cost on the contract bank</h2>
 <p>25 questions: 18 single facts, 4 terms the contract does not contain (the right answer is “not there”), and 3 that
 need several contracts. Grading is a fixed rubric (exact figure present, right contract cited, no made-up terms), not a
-model judging a model. Citing a contract that the answer checked and ruled out is not penalized; the first version
-of the rubric did penalize it and failed four correct answers, so it was changed before publishing (the change is in
-the git history).</p>
+model judging a model. Figures must match as whole numbers, so “5,000” does not match inside “4,500,000”. Citing a
+contract that the answer checked and ruled out is not penalized; the first version of the rubric did penalize it and
+failed four correct answers. Cross-contract answers are graded on recall only (every right contract named), not on
+precision.</p>
+<p class=muted>Changes since the first published run, which is kept in <code>runs/v1_topic_list_notes</code>: the
+note-writing prompt no longer lists the clause types the questions ask about (it now asks generically for the terms a
+lawyer would be likely to ask about), and the grader now matches whole figures. The numbers below are
+from a fresh live run with both changes in place; it is a single run, so a one-question difference is within run-to-run noise. The grades shown are the recorded
+answers re-graded with the final grader; how the run was graded live is in <code>runs/latest/results_as_recorded.json</code>.</p>
 {summary_table(p1, o1)}
-<p><b>What it shows.</b> The precomputed memory matched long context on all 25 questions with about a ninth of the
-context per question, after a one-time offline build that cost a little more than one long-context question (109,525 tokens against 94,071). Retrieval
-and the tool agent were cheapest per question but missed 6 to 7 single facts, always by saying the term was not in what
-they found rather than by making one up.</p>
+{shows}
 <p class=muted>Context tokens are counted by the harness (about 4 characters per token) for what each config puts in
 the prompt. Billed input tokens are what the model provider reported, including its own fixed prompt overhead and cached reads.
 The precomputed memory also spent {nt.get('build_tokens', 0):,} tokens once, offline, to write its notes.</p>
@@ -135,7 +152,8 @@ The precomputed memory also spent {nt.get('build_tokens', 0):,} tokens once, off
 law, a shorter termination notice, and two minimum fees. A memory built before the change still answers from the old
 terms. The harness detects which contracts changed by comparing document hashes with the ones the memory was built
 from, then either guards (sends questions on changed contracts to retrieval) or rebuilds only those contracts. The rule this suggests for a deployment: until a memory is rebuilt, route any question
-on a contract family that changed since the last build to the current path.</p>
+on a contract family that changed since the last build to the current path. The guard was exercised only on the five
+changed questions, which all routed to retrieval; its routing for unchanged contracts after an amendment is untested.</p>
 <p><b>Contracts flagged stale:</b> {', '.join(st.get('stale_after_amendments', [])) or '-'}. <b>Rebuilt:</b> {rebuilt},
 for {st.get('rebuild_tokens', 0):,} tokens (the full build was {st.get('full_build_tokens', 0):,}).</p>
 {summary_table(p2, o2)}

@@ -78,17 +78,10 @@ NOTES_SYSTEM = (
     "You write compact reference notes about one commercial contract so a colleague can answer "
     "questions later without the contract. Be exact and complete on numbers, dates, durations and names."
 )
-NOTES_PROMPT = """Write notes on the contract below (and any amendments to it, which control over the original).
-Cover each topic on its own line as `Topic: ...`. Quote exact numbers, durations, dollar amounts and
-jurisdictions. If the contract has nothing on a topic, write `Topic: none`.
-
-Topics: Parties; Dates; Initial term; Renewal and notice to stop renewal; Termination rights (with and
-without cause, notice); Governing law; Fees, minimum fees and commitments; Liability caps and limits;
-Insurance; Audit rights; Assignment and change of control; Exclusivity, non-compete, non-solicitation
-(customers and employees, with durations); IP ownership and licences; Source code escrow; Warranties
-(with time limits); Anything else a lawyer would ask about.
-
-Keep it under 450 words.
+NOTES_PROMPT = """Write reference notes on the contract below (and any amendments to it, which control over the
+original) so a colleague can answer questions about it later without the contract. Cover whatever terms a lawyer
+would be likely to ask about. Quote exact numbers, durations, dollar amounts, dates, names and jurisdictions.
+Keep it under 500 words.
 
 {docs}"""
 

@@ -7,41 +7,54 @@ ahead of time answer as well as rereading the contracts, at a fraction of the to
 is amended?
 
 - **Contract bank:** five public contracts from CUAD (about 69,000 tokens): a software license and hosting
-  agreement, a supply agreement, a transportation services agreement, an outsourcing agreement and a maintenance and
+  agreement, a supply agreement, a transportation services agreement, an outsourcing agreement, and a maintenance and
   support agreement.
 - **25 questions** (`data/questions.json`): 18 single facts, 4 terms the contract does not contain (the right answer is
   "not there"), 3 that need several contracts.
 - **5 changed questions** (`data/changed_questions.json`) after four amendments (`data/amendments/`, written for this
-  test and labeled as not real filings) change a term, a governing law, a notice period and two minimum fees.
+  test and labeled as not real filings) change a term, a governing law, a notice period, and two minimum fees.
 - **Configs:** long context (every contract in the prompt), retrieval (BM25, top 6 passages), a tool-using agent
   (search and read over several turns), and a precomputed memory (notes written once per contract, offline). After the
-  amendments, the memory runs three ways: not rebuilt, guarded (questions on a changed contract fall back to retrieval)
+  amendments, the memory runs three ways: not rebuilt, guarded (questions on a changed contract fall back to retrieval),
   and rebuilt for the changed contracts only.
 - **Grading** is a fixed rubric in `cmh/grade.py` (exact figure present, right contract cited, no made-up terms), not a
   model judging a model.
 
 ## Results (recorded run, claude-sonnet-5-5 through Claude Code)
 
-| Config | Correct (25) | Context tokens / question | Billed input / question | Latency |
-|---|---|---|---|---|
-| Long context | 25/25 | 69,221 | 94,071 | 1.43s |
-| Retrieval (BM25, top 6) | 18/25 | 3,510 | 6,028 | 1.28s |
-| Tool agent | 19/25 | 5,078 | 12,729 | 7.27s |
-| Precomputed memory | 25/25 | 7,479 | 11,971 | 1.14s |
+| Config | Correct (25) | Context tokens / question | Billed input / question |
+|---|---|---|---|
+| Long context | 25/25 | 69,221 | 94,078 |
+| Retrieval (BM25, top 6) | 19/25 | 3,510 | 6,034 |
+| Tool agent | 19/25 | 5,172 | 12,902 |
+| Precomputed memory | 25/25 | 7,073 | 12,085 |
 
-The memory's one-time build cost 109,525 tokens. No config made up a term; retrieval and the agent missed facts by
-saying the term was not in what they found. After the four amendments, the memory that was not rebuilt answered all
-5 changed questions with the old terms; the stale guard and the rebuild (83,948 tokens, four contracts) both got 5/5.
-Every call is in `runs/latest/calls.jsonl`.
+Context tokens are the harness's estimate (about 4 characters per token) of what each config puts in the prompt;
+billed input is what the provider reported. The memory's one-time build cost 108,853 tokens. No config made up a term.
+After the four amendments, the memory that was not rebuilt answered all 5 changed questions with the old terms; the
+stale guard and the rebuild (83,153 tokens, four contracts) both got 5/5. The guard was exercised only on the five
+changed questions, which all routed to retrieval. Every call is in `runs/latest/calls.jsonl`; latency and per-question
+detail are on the demo page.
 
-Rubric note: the first version penalized cross-contract answers for citing contracts they had checked and ruled out,
-which failed four correct answers. That check was removed before publishing (see git history).
+Changes since the first published run (kept in `runs/v1_topic_list_notes`; replay it with the code at commit 62bcc1f, since the note prompt changed):
+
+- The note-writing prompt used to list the clause types the questions ask about, which made the memory's score a best
+  case. It now asks generically for the terms a lawyer would be likely to ask about.
+- The grader matched figures as substrings, so "5,000" matched inside "4,500,000" and gave the tool agent one false
+  pass. Figures now match as whole numbers.
+- The first rubric penalized cross-contract answers for citing contracts they had checked and ruled out, which failed
+  four correct answers. That check was removed, so cross-contract answers are graded on recall only, not precision.
+
+`runs/latest/results_as_recorded.json` is how the live run was graded at the time, by an interim grader that also
+required a word boundary after a figure, so "twelve (12) month" failed to match "twelve (12) months" (q15).
+`results.json` is the same recorded answers re-graded with the fixed grader: long context and the memory go from 24
+to 25, and retrieval from 18 to 19.
 
 ## Run it
 
 ```
 python -m unittest discover -s tests -t .              # tests, no model needed
-python -m cmh.run --replay runs/latest                  # re-grade the recorded run, no key needed
+python -m cmh.run --replay runs/latest                  # re-grade the recorded run, no key needed (overwrites its results.json)
 python -m cmh.run --model claude-cli:sonnet             # live, through Claude Code in print mode
 python -m cmh.run --model api:claude-sonnet-5-5         # live, with ANTHROPIC_API_KEY
 python docs/build_page.py                               # rebuild the demo page from runs/latest
@@ -60,7 +73,7 @@ Every config implements the same interface in `cmh/memory.py`:
 
 `EngramMemory` is the empty slot. With access, `build()` would train or point at an engram for the bank, `context()`
 would send little or nothing because the knowledge lives in the model, and the same 30 questions would score it next to
-the baselines on accuracy, tokens and latency. `GuardedMemory` works with any memory that reports `stale_docs`.
+the baselines on accuracy, tokens, and latency. `GuardedMemory` works with any memory that reports `stale_docs`.
 
 ## Layout
 

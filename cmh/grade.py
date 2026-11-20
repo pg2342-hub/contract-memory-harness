@@ -19,8 +19,10 @@ def norm(s: str) -> str:
 
 
 def has_any(text: str, alts: list[str]) -> bool:
+    """True if any wording appears without a letter, digit or point before it or a digit after it, so "5000" does not
+    match inside "4500000" but "twelve (12) month" still matches "twelve (12) months"."""
     t = norm(text)
-    return any(norm(a) in t for a in alts)
+    return any(re.search(r"(?<![\w.])" + re.escape(norm(a)) + r"(?!\d)", t) for a in alts)
 
 
 def cited_bases(citations) -> set[str]:
