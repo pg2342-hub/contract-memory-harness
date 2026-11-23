@@ -23,19 +23,20 @@ LABELS = {
 KIND = {"fact": "Single fact", "absent": "Not in contract", "cross": "Across contracts", "changed": "Changed by amendment"}
 
 CSS = """
-:root{--fg:#111;--muted:#555;--line:#ddd;--bg:#fff;--soft:#f5f5f5}
-@media (prefers-color-scheme:dark){:root{--fg:#eee;--muted:#aaa;--line:#333;--bg:#111;--soft:#1b1b1b}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 Inter,system-ui,-apple-system,sans-serif}
-main{max-width:980px;margin:0 auto;padding:28px 16px 60px}h1{font-size:26px;margin:0 0 6px}h2{font-size:19px;margin:34px 0 8px}
-p{margin:6px 0 10px}.muted{color:var(--muted)}a{color:inherit}
-table{width:100%;border-collapse:collapse;margin:8px 0 6px;font-size:14px}th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-weight:600}td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}.wrap{overflow-x:auto}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
-.tile{border:1px solid var(--line);border-radius:8px;padding:12px}.tile b{display:block;font-size:22px}
-.pill{display:inline-block;border:1px solid var(--fg);border-radius:10px;padding:0 7px;font-size:12px}
-.pill.fail{background:var(--fg);color:var(--bg)}details{border-bottom:1px solid var(--line);padding:6px 0}summary{cursor:pointer}
-select{font:inherit;padding:4px;background:var(--bg);color:var(--fg);border:1px solid var(--line)}
-code{background:var(--soft);padding:1px 4px;border-radius:3px}
+main{padding-bottom:24px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:40px 0 8px}
+.tile{border:1px solid var(--rule);border-radius:16px;padding:18px 20px;font-size:14px;color:var(--ink-2)}
+.tile b{display:block;font:400 32px/1.15 var(--serif);color:var(--ink);margin-bottom:6px;font-variant-numeric:tabular-nums}
+.wrap{overflow-x:auto;margin:16px 0}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.res{display:inline-flex;align-items:center;min-height:24px;padding:0 10px;border-radius:999px;font:500 12px/1 var(--mono);
+letter-spacing:.03em;white-space:nowrap;background:var(--green-wash);color:var(--green)}
+.res.fail{background:var(--ink);color:var(--paper)}
+summary{flex-wrap:wrap;column-gap:8px}
+details p{margin-top:10px;font-size:15px}
+label select{margin-left:6px}
+code{background:rgb(27 26 23/.05);padding:1px 5px;border-radius:4px}
+p.muted{font-size:15px;max-width:46em}
 """
 
 
@@ -73,7 +74,7 @@ def explorer(part: dict, order: list[str], pid: str, default: str) -> str:
         for r in part[c]["rows"]:
             g = r["grade"]
             failed = [k.replace("_", " ") for k, v in g["checks"].items() if not v]
-            pill = f"<span class='pill{'' if g['pass'] else ' fail'}'>{g['label']}</span>"
+            pill = f"<span class='res{'' if g['pass'] else ' fail'}'>{g['label']}</span>"
             o = r["output"]
             steps = ""
             if r.get("steps"):
@@ -172,13 +173,15 @@ Built by Pranav Gudise.</p>
 """
     js = "<script>function show(p,c){document.querySelectorAll('.ex-'+p).forEach(e=>e.style.display=e.dataset.c==c?'block':'none')}show('p1','long_context');show('p2','notes_stale')</script>"
     return (f"<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>"
-            f"<title>Contract memory harness</title><link rel=preconnect href=https://fonts.googleapis.com>"
-            f"<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap' rel=stylesheet>"
+            f"<title>Contract memory harness</title>"
             f"<style>{CSS}</style></head><body><main>{body}</main>{js}</body></html>")
 
 
 if __name__ == "__main__":
     run = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "runs" / "latest"
     (ROOT / "docs" / "index.html").write_text(build(run))
+    import subprocess
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "demo_chrome.py"), str(ROOT / "docs" / "index.html"),
+                    "--repo", "contract-memory-harness"], check=True)
     (ROOT / "docs" / ".nojekyll").write_text("")
     print("wrote docs/index.html")
